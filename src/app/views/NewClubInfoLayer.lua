@@ -30,6 +30,7 @@ function NewClubInfoLayer:onConfig()
     self.widget             = {
         {"Panel_bg"},
         {"Panel_ui"},
+        {"Panel_wayTop"},
         {"Image_head"},
         {"Text_clubName"},
         {"Text_clubID"},
@@ -39,6 +40,7 @@ function NewClubInfoLayer:onConfig()
         {"Text_broadcast"},
 
         {"Button_return", "onReturn"},
+        {"Button_return2", "onReturn"},
         {"Button_playway", "onPlayWay"},
         {"Button_share", "onShare"},
         {"Button_mem", "onMember"},
@@ -51,6 +53,7 @@ function NewClubInfoLayer:onConfig()
         {"Button_tblItem"},
         {"Image_bottom"},
         {"Button_quickStart", "onQuickStart"},
+        {"Button_closeWay", "onCloseWay"},
         {"Button_custom", "onCustomRoom"},
         {"Button_chat", "onChat"},
         {"Image_playWayInfo"},
@@ -60,6 +63,7 @@ function NewClubInfoLayer:onConfig()
         {"Button_moreClub","onMoreClub"},
         {"Panel_moreClub","onMoreClub"},
         {"Image_moreClubFrame"},
+        {"Panel_outFrame"},
         {"ListView_more"},
         {"Button_item"},
         {"Button_createClub","onCreateClub"},
@@ -80,6 +84,9 @@ function NewClubInfoLayer:onConfig()
         {"Image_mpFrame"},
         {"Image_mp"},
         {"Button_modifymp", "onModifyMp"},
+
+        {"Button_addway", 'onAddWay'},
+        {"Button_selectway"},
     }
     self.clubData           = {}      --亲友圈大厅数据
     self.userOffice         = 2       --普通成员
@@ -154,13 +161,15 @@ function NewClubInfoLayer:onCreate(param)
     self.Image_playWayInfo:setVisible(false)
     self.Image_noSetWayFlag:setVisible(false)
     self.Image_roomcardFrame:setVisible(false)
+    self.Image_moreClubFrame:setVisible(false)
+    self.Panel_outFrame:setVisible(false)
     self.Panel_tableItem:retain()
     self.Button_item:retain()
     self.ListView_more:removeAllChildren()
     local callback = function()
         self:onMoreClub()
     end
-    Common:registerScriptMask(self.Image_moreClubFrame, callback)
+    Common:registerScriptMask(self.Panel_outFrame, callback)
     local callback = function()
         self:onCardDes()
     end
@@ -277,6 +286,13 @@ function NewClubInfoLayer:onChat()
     self:addChild(box)
 end
 
+function NewClubInfoLayer:onCloseWay()
+    local item = self:getChildByName('club_playway_info')
+    if item then
+        item:removeFromParent()
+    end
+end
+
 function NewClubInfoLayer:onQuickStart()
     local waynum = self:getPlayWayNums()--self.clubData.cbPlayCount
     local tables = self.ScrollView_clubTbl:getChildren()
@@ -317,52 +333,66 @@ function NewClubInfoLayer:onQuickStart()
             item:setVisible(true)
             self:addChild(item)
             local size = self.Panel_bg:getContentSize()
-            item:setPosition(size.width, 101)
+            item:setPosition(size.width / 2, size.height / 2)
             item:setName('club_playway_info')
             Common:registerScriptMask(item)
 
-            local ListView_playList = ccui.Helper:seekWidgetByName(item,"ListView_playList")
+            local ScrollView_playList = ccui.Helper:seekWidgetByName(item,"ScrollView_playList")
             local Button_playItem = ccui.Helper:seekWidgetByName(item,"Button_playItem")
-            local numTbl = {'一', '二', '三', '四', '五', '六', '七', '八', '九', '十'}
-            for i = 1, waynum+1 do
-                local btn = Button_playItem:clone()
-                ListView_playList:pushBackCustomItem(btn)
-                if i > waynum then
-                    btn:setTitleText('任意玩法')
-                else
-                    btn:setTitleText('玩法' .. numTbl[i])
-                end
-
-                btn:setPressedActionEnabled(true)
-                btn:addClickEventListener(function(sender)
-                    require("common.Common"):playEffect("common/buttonplay.mp3")
-                    if i <= waynum then
-                        for _,v in ipairs(tables) do
-                            if v.data and v.data.wTableSubType == self.clubData.dwPlayID[i] then
-                                local data = v.data
-                                local wKindID = math.floor(data.dwTableID/10000)
-                                if (wKindID == 51 or wKindID == 53 or wKindID == 55 or wKindID == 56 or wKindID == 57 or wKindID == 58 or wKindID == 59) and data.tableParameter.bCanPlayingJoin == 1 and data.wCurrentChairCount < data.wChairCount  then
-                                    require("common.SceneMgr"):switchTips(require("app.MyApp"):create(v.data.dwTableID):createView("InterfaceJoinRoomNode"))
-                                    return
-                                elseif data.bIsGameStart == false and data.wCurrentChairCount < data.wChairCount then
-                                    require("common.SceneMgr"):switchTips(require("app.MyApp"):create(v.data.dwTableID):createView("InterfaceJoinRoomNode"))
-                                    return
-                                end
-                            end
-                        end
-                        require("common.SceneMgr"):switchTips(require("app.MyApp"):create(-2,self.clubData.dwPlayID[i],self.clubData.wKindID[i],self.clubData.wGameCount[i],self.clubData.dwClubID,self.clubData.tableParameter[i]):createView("InterfaceCreateRoomNode"))
-                    else
-                        for i,v in ipairs(tables) do
-                            if v.data and v.data.dwTableID then
-                                if v.data.bIsGameStart == false and v.data.wCurrentChairCount < v.data.wChairCount then
-                                    require("common.SceneMgr"):switchTips(require("app.MyApp"):create(v.data.dwTableID):createView("InterfaceJoinRoomNode"))
-                                    return
-                                end
-                            end
-                        end
-                        require("common.MsgBoxLayer"):create(0,nil,'没有桌子')
+            local index = 0
+            for i,v in ipairs(self.clubData.wKindID) do
+                local gameinfo = StaticData.Games[v]
+                if v ~= 0 and gameinfo then
+                    index = index + 1
+                    local btn = Button_playItem:clone()
+                    ScrollView_playList:addChild(btn)
+                    local row = index % 2
+                    if row == 0 then
+                        row = 2
                     end
-                end)
+                    local col = math.ceil(index / 2)
+                    local x = 106 + (col - 1) * 284
+                    local y = 270 - (row - 1) * 100
+                    btn:setPosition(x, y)
+
+                    if self.clubData.szParameterName[i] ~= "" and self.clubData.szParameterName[i] ~= " " then
+                        btn:setTitleText(self.clubData.szParameterName[i])
+                    else
+                        local kindid = self.clubData.wKindID[i]
+                        btn:setTitleText(StaticData.Games[kindid].name)
+                    end
+
+                    btn:setPressedActionEnabled(true)
+                    btn:addClickEventListener(function(sender)
+                        require("common.Common"):playEffect("common/buttonplay.mp3")
+                        if i <= waynum then
+                            for _,v in ipairs(tables) do
+                                if v.data and v.data.wTableSubType == self.clubData.dwPlayID[i] then
+                                    local data = v.data
+                                    local wKindID = math.floor(data.dwTableID/10000)
+                                    if (wKindID == 51 or wKindID == 53 or wKindID == 55 or wKindID == 56 or wKindID == 57 or wKindID == 58 or wKindID == 59) and data.tableParameter.bCanPlayingJoin == 1 and data.wCurrentChairCount < data.wChairCount  then
+                                        require("common.SceneMgr"):switchTips(require("app.MyApp"):create(v.data.dwTableID):createView("InterfaceJoinRoomNode"))
+                                        return
+                                    elseif data.bIsGameStart == false and data.wCurrentChairCount < data.wChairCount then
+                                        require("common.SceneMgr"):switchTips(require("app.MyApp"):create(v.data.dwTableID):createView("InterfaceJoinRoomNode"))
+                                        return
+                                    end
+                                end
+                            end
+                            require("common.SceneMgr"):switchTips(require("app.MyApp"):create(-2,self.clubData.dwPlayID[i],self.clubData.wKindID[i],self.clubData.wGameCount[i],self.clubData.dwClubID,self.clubData.tableParameter[i]):createView("InterfaceCreateRoomNode"))
+                        else
+                            for i,v in ipairs(tables) do
+                                if v.data and v.data.dwTableID then
+                                    if v.data.bIsGameStart == false and v.data.wCurrentChairCount < v.data.wChairCount then
+                                        require("common.SceneMgr"):switchTips(require("app.MyApp"):create(v.data.dwTableID):createView("InterfaceJoinRoomNode"))
+                                        return
+                                    end
+                                end
+                            end
+                            require("common.MsgBoxLayer"):create(0,nil,'没有桌子')
+                        end
+                    end)
+                end
             end
         end
     end
@@ -386,26 +416,28 @@ function NewClubInfoLayer:onCustomRoom()
 end
 
 function NewClubInfoLayer:onMoreClub()
-    local size = self.Panel_bg:getContentSize()
+    local size = self.Panel_moreClub:getContentSize()
     if self.Image_moreClubFrame:isVisible() then
-        self.Panel_moreClub:stopAllActions()
-        local moveto = cc.MoveTo:create(0.2, cc.p(size.width, size.height / 2))
+        self.Image_moreClubFrame:stopAllActions()
+        local moveto = cc.MoveTo:create(0.2, cc.p(-400, size.height / 2))
         local callfunc = cc.CallFunc:create(function()
             self.Image_moreClubFrame:setVisible(false)
+            self.Panel_outFrame:setVisible(false)
         end)
-        self.Panel_moreClub:runAction(cc.Sequence:create(moveto, callfunc))
+        self.Image_moreClubFrame:runAction(cc.Sequence:create(moveto, callfunc))
     else
+        self.Image_moreClubFrame:stopAllActions()
         self.Image_moreClubFrame:setVisible(true)
+        self.Panel_outFrame:setVisible(true)
+        self.Image_moreClubFrame:setPositionX(-400)
         self.ListView_more:setVisible(false)
-        self.Panel_moreClub:setPositionX(size.width)
-        self.Panel_moreClub:stopAllActions()
-        local moveto = cc.MoveTo:create(0.2, cc.p(size.width - 415, size.height / 2))
+        local moveto = cc.MoveTo:create(0.2, cc.p(0, size.height / 2))
         local callfunc = cc.CallFunc:create(function()
             self.ListView_more:setVisible(true)
             self.ListView_more:removeAllChildren()
             UserData.Guild:getClubList()
         end)
-        self.Panel_moreClub:runAction(cc.Sequence:create(moveto, callfunc))
+        self.Image_moreClubFrame:runAction(cc.Sequence:create(moveto, callfunc))
     end
 end
 
@@ -440,6 +472,10 @@ function NewClubInfoLayer:onShareChat()
         require("app.MyApp"):create(data):createView("ShareLayer")
     end
     dump(data,'type9=')
+end
+
+function NewClubInfoLayer:onAddWay()
+
 end
 
 ------------------------------------------------------------------------
@@ -505,6 +541,8 @@ function NewClubInfoLayer:createClubTable()
             end)
         end
     end
+
+    self:initPlayWayPendant()
 end
 
 --是否是管理员
@@ -528,8 +566,8 @@ function NewClubInfoLayer:updateClubInfo()
     UserData.Guild:addEnterClub(self.clubData.dwClubID)
     Common:requestUserAvatar(self.clubData.dwUserID, self.clubData.szLogoInfo, self.Image_head, "clip")
     self.Text_clubName:setString(self.clubData.szClubName)
-    self.Text_clubID:setString("圈ID:" .. self.clubData.dwClubID)
-    self.Text_clubPeople:setString("人数:" .. self.clubData.dwOnlinePlayerCount .. '/' .. self.clubData.dwClubPlayerCount)
+    self.Text_clubID:setString("ID:" .. self.clubData.dwClubID)
+    self.Text_clubPeople:setString(self.clubData.dwOnlinePlayerCount .. '/' .. self.clubData.dwClubPlayerCount)
     self.Text_qyqPropCount:setString("亲友圈房卡:" .. self.clubData.dwPropCount)
     self.Button_custom:setVisible(self.clubData.bHaveCustomizeRoom)
     if self.clubData.dwUserID ~= UserData.User.userID and not self:isAdmin(UserData.User.userID) then
@@ -808,7 +846,8 @@ function NewClubInfoLayer:refreshTableOneByOne(data)
         end
     end
 
-    Common:addTouchEventListener(item,function(sender,event)
+    local Button_tblItem = ccui.Helper:seekWidgetByName(item,"Button_tblItem")
+    Common:addTouchEventListener(Button_tblItem,function(sender,event)
         local isAdmin = false
         if UserData.User.userID == self.clubData.dwUserID then
             isAdmin = true
@@ -909,12 +948,12 @@ function NewClubInfoLayer:addOnceClubItem(data)
         self.ListView_more:insertCustomItem(item,pos)
     end
     Common:requestUserAvatar(data.dwUserID, data.szLogoInfo, Image_leadHead, "img")
-    Text_leader:setColor(cc.c3b(114, 67, 13))
-    Text_memNum:setColor(cc.c3b(114, 67, 13))
-    Text_playWay:setColor(cc.c3b(114, 67, 13))
+    -- Text_leader:setColor(cc.c3b(114, 67, 13))
+    -- Text_memNum:setColor(cc.c3b(114, 67, 13))
+    -- Text_playWay:setColor(cc.c3b(114, 67, 13))
     Text_leader:setString(data.szClubName)
     Text_playWay:setString("圈ID:" .. data.dwClubID)
-    Text_memNum:setString("人数：" .. data.dwOnlinePlayerCount .. '/' .. data.dwClubPlayerCount)
+    Text_memNum:setString(data.dwOnlinePlayerCount .. '/' .. data.dwClubPlayerCount)
     self:setMemberMgrFlag(item, data)
 
     item:setTouchEnabled(true)
@@ -1204,6 +1243,63 @@ end
 function NewClubInfoLayer:SUB_CL_USER_INFO(event)
     print('刷新名片：', UserData.User.szErWeiMaLogo)
     Common:requestErWeiMaPicture(UserData.User.szErWeiMaLogo, self.Image_mp)
+end
+
+
+--*****************************************************--
+function NewClubInfoLayer:initPlayWayPendant()
+    local len = 0
+    for i,v in ipairs(self.clubData.wKindID) do
+        local gameinfo = StaticData.Games[v]
+        if gameinfo then
+            len = len + 1
+        end
+    end
+
+    self.Panel_wayTop:removeAllChildren()
+    local index = 0
+    for i,v in ipairs(self.clubData.wKindID) do
+        local gameinfo = StaticData.Games[v]
+        if gameinfo then
+            index = index + 1
+            local idx = index
+            local item = self.Button_selectway:clone()
+            self.Panel_wayTop:addChild(item)
+            local x = 1133 - (len - index) * 97
+            item:setPosition(x, self.Panel_wayTop:getContentSize().height)
+            local Text_wayname = ccui.Helper:seekWidgetByName(item, "Text_wayname")
+            local Image_wayidx = ccui.Helper:seekWidgetByName(item, "Image_wayidx")
+            if self.clubData.szParameterName[i] ~= "" and self.clubData.szParameterName[i] ~= " " then
+                Text_wayname:setString(self.clubData.szParameterName[i])
+            else
+                local kindid = self.clubData.wKindID[i]
+                Text_wayname:setString(StaticData.Games[kindid].name)
+            end
+            Image_wayidx:loadTexture(string.format('csclub/rule_%d.png', index))
+            item:setPressedActionEnabled(true)
+            item:addClickEventListener(function(sender)
+                require("common.Common"):playEffect("common/buttonplay.mp3")
+                self:selPlayWayTopBtn(idx)
+            end)
+        end
+    end
+    local curIdx = cc.UserDefault:getInstance():getIntegerForKey('playway_pendant', 1)
+    self:selPlayWayTopBtn(curIdx)
+end
+
+function NewClubInfoLayer:selPlayWayTopBtn(idx)
+    local items = self.Panel_wayTop:getChildren()
+    for i,v in ipairs(items) do
+        local Text_wayname = ccui.Helper:seekWidgetByName(v, "Text_wayname")
+        if i == idx then
+            v:loadTextures('csclub/btn_play_n.png', 'csclub/btn_play_n.png', 'csclub/btn_play_n.png')
+            Text_wayname:setColor(cc.c3b(134, 72, 29))
+            cc.UserDefault:getInstance():setIntegerForKey('playway_pendant', i)
+        else
+            v:loadTextures('csclub/btn_play_s.png', 'csclub/btn_play_s.png', 'csclub/btn_play_s.png')
+            Text_wayname:setColor(cc.c3b(255, 255, 255))
+        end
+    end
 end
 
 return NewClubInfoLayer
