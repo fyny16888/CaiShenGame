@@ -570,6 +570,55 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
+                  <AbstractNodeData Name="Image_150" ActionTag="124312555" Tag="426" IconVisible="False" LeftMargin="197.7349" RightMargin="740.2651" TopMargin="-236.3150" BottomMargin="245.3150" LeftEage="112" RightEage="112" TopEage="234" BottomEage="234" Scale9OriginX="112" Scale9OriginY="234" Scale9Width="118" Scale9Height="243" ctype="ImageViewObjectData">
+                    <Size X="342.0000" Y="711.0000" />
+                    <Children>
+                      <AbstractNodeData Name="Panel_mgr" ActionTag="-1245540768" Tag="429" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="35.9989" RightMargin="6.0011" TopMargin="95.0502" BottomMargin="265.9498" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+                        <Size X="300.0000" Y="350.0000" />
+                        <AnchorPoint ScaleX="0.5000" />
+                        <Position X="185.9989" Y="265.9498" />
+                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                        <CColor A="255" R="255" G="255" B="255" />
+                        <PrePosition X="0.5439" Y="0.3741" />
+                        <PreSize X="0.8772" Y="0.4923" />
+                        <SingleColor A="255" R="150" G="200" B="255" />
+                        <FirstColor A="255" R="150" G="200" B="255" />
+                        <EndColor A="255" R="255" G="255" B="255" />
+                        <ColorVector ScaleY="1.0000" />
+                      </AbstractNodeData>
+                    </Children>
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="368.7349" Y="600.8150" />
+                    <Scale ScaleX="0.3500" ScaleY="0.3500" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.2881" Y="0.8345" />
+                    <PreSize X="0.2672" Y="0.9875" />
+                    <FileData Type="Normal" Path="csclub/img_dianxiaoer.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Image_151" ActionTag="1970105454" Tag="427" IconVisible="False" LeftMargin="424.7546" RightMargin="564.2454" TopMargin="60.6973" BottomMargin="550.3027" LeftEage="96" RightEage="96" TopEage="35" BottomEage="35" Scale9OriginX="96" Scale9OriginY="35" Scale9Width="99" Scale9Height="39" ctype="ImageViewObjectData">
+                    <Size X="291.0000" Y="109.0000" />
+                    <Children>
+                      <AbstractNodeData Name="Text_topDes" ActionTag="2124230570" Tag="428" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="35.5000" RightMargin="35.5000" TopMargin="24.5000" BottomMargin="24.5000" IsCustomSize="True" FontSize="20" LabelText="Text Label" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                        <Size X="220.0000" Y="60.0000" />
+                        <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                        <Position X="145.5000" Y="54.5000" />
+                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                        <CColor A="255" R="255" G="255" B="255" />
+                        <PrePosition X="0.5000" Y="0.5000" />
+                        <PreSize X="0.7560" Y="0.5505" />
+                        <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
+                        <OutlineColor A="255" R="255" G="0" B="0" />
+                        <ShadowColor A="255" R="110" G="110" B="110" />
+                      </AbstractNodeData>
+                    </Children>
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="570.2546" Y="604.8027" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.4455" Y="0.8400" />
+                    <PreSize X="0.2273" Y="0.1514" />
+                    <FileData Type="Normal" Path="csclub/img_guizeBG.png" Plist="" />
+                  </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="640.0000" Y="360.0000" />

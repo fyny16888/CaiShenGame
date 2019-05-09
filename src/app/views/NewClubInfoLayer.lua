@@ -589,11 +589,11 @@ function NewClubInfoLayer:updateClubInfo()
     end
 
     --广播
-    if not self.clubData.szAnnouncement or self.clubData.szAnnouncement == "" or self.clubData.szAnnouncement == " " then
-        self:playBroadcast('欢迎加入亲友圈，祝大家生活愉快')
-    else
-        self:playBroadcast(self.clubData.szAnnouncement)
-    end
+    -- if not self.clubData.szAnnouncement or self.clubData.szAnnouncement == "" or self.clubData.szAnnouncement == " " then
+    --     self:playBroadcast('欢迎加入亲友圈，祝大家生活愉快')
+    -- else
+    --     self:playBroadcast(self.clubData.szAnnouncement)
+    -- end
 
     local isAdmin = false
     if UserData.User.userID == self.clubData.dwUserID or self:isAdmin(UserData.User.userID)  then
@@ -874,25 +874,25 @@ function NewClubInfoLayer:refreshTableOneByOne(data)
 end
 
 --广播
-function NewClubInfoLayer:playBroadcast(notice)
-    printInfo('playBroadcast:%s', notice)
-    self.Text_broadcast:stopAllActions()
-    self.Panel_broadcast:stopAllActions()
-    local function showBroadcast()
-        if not self.Panel_broadcast:isVisible() then
-            self.Text_broadcast:setString(notice)
-            self.Text_broadcast:setPositionX(self.Text_broadcast:getParent():getContentSize().width)
-            local time = (self.Text_broadcast:getParent():getContentSize().width + self.Text_broadcast:getAutoRenderSize().width)/100
-            self.Text_broadcast:runAction(cc.MoveTo:create(time,cc.p(-self.Text_broadcast:getAutoRenderSize().width,self.Text_broadcast:getPositionY())))
-            self.Panel_broadcast:runAction(cc.Sequence:create(cc.DelayTime:create(time),cc.Hide:create(),cc.DelayTime:create(5),cc.CallFunc:create(showBroadcast)))
-            self.Panel_broadcast:setVisible(true)
-        else
-            self.Panel_broadcast:setVisible(false)
-            self.Panel_broadcast:runAction(cc.Sequence:create(cc.DelayTime:create(1),cc.CallFunc:create(showBroadcast)))
-        end
-    end
-    showBroadcast()
-end
+-- function NewClubInfoLayer:playBroadcast(notice)
+--     printInfo('playBroadcast:%s', notice)
+--     self.Text_broadcast:stopAllActions()
+--     self.Panel_broadcast:stopAllActions()
+--     local function showBroadcast()
+--         if not self.Panel_broadcast:isVisible() then
+--             self.Text_broadcast:setString(notice)
+--             self.Text_broadcast:setPositionX(self.Text_broadcast:getParent():getContentSize().width)
+--             local time = (self.Text_broadcast:getParent():getContentSize().width + self.Text_broadcast:getAutoRenderSize().width)/100
+--             self.Text_broadcast:runAction(cc.MoveTo:create(time,cc.p(-self.Text_broadcast:getAutoRenderSize().width,self.Text_broadcast:getPositionY())))
+--             self.Panel_broadcast:runAction(cc.Sequence:create(cc.DelayTime:create(time),cc.Hide:create(),cc.DelayTime:create(5),cc.CallFunc:create(showBroadcast)))
+--             self.Panel_broadcast:setVisible(true)
+--         else
+--             self.Panel_broadcast:setVisible(false)
+--             self.Panel_broadcast:runAction(cc.Sequence:create(cc.DelayTime:create(1),cc.CallFunc:create(showBroadcast)))
+--         end
+--     end
+--     showBroadcast()
+-- end
 
 --添加一个亲友圈节点
 function NewClubInfoLayer:addOnceClubItem(data)
