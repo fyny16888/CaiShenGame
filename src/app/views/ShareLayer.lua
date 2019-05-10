@@ -32,6 +32,11 @@ function ShareLayer:onCreate(params)
     Common:addTouchEventListener(self.root,function() 
         require("common.SceneMgr"):switchTips()
     end,true)
+
+    local Button_close = ccui.Helper:seekWidgetByName(self.root,"Button_close")
+    Common:addTouchEventListener(Button_close, function() 
+        self:removeFromParent()
+    end)
     
     local function onEventShare(cbTargetType)
         local data = clone(shareData)

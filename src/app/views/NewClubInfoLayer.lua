@@ -85,12 +85,18 @@ function NewClubInfoLayer:onConfig()
         {"Image_mp"},
         {"Button_modifymp", "onModifyMp"},
 
-        {"Button_addway", 'onAddWay'},
+        {"Button_addway", 'onPlayWay'},
         {"Button_selectway"},
+        {"Button_notices", "onNotices"},
+        {"Panel_mgr", 'onMgr'},
+        {"Text_topDes"},
+        {"Button_record", "onRecord"},
+        {"Button_gonggao", "onGongGao"},
     }
     self.clubData           = {}      --亲友圈大厅数据
     self.userOffice         = 2       --普通成员
     self.userFatigueValue   = 0       --用户疲劳值
+    self.btnSwitchFlag      = 0       --0：规则 1：公告
 end
 
 function NewClubInfoLayer:onEnter()
@@ -474,8 +480,25 @@ function NewClubInfoLayer:onShareChat()
     dump(data,'type9=')
 end
 
-function NewClubInfoLayer:onAddWay()
+function NewClubInfoLayer:onNotices()
+    if self.btnSwitchFlag == 0 then
+        self.btnSwitchFlag = 1
+        self.Button_notices:loadTextures('csclub/img_guize_deng.png', 'csclub/img_guize_zi.png', 'csclub/img_guize_zi.png')
+        self.Text_topDes:setString(self.clubData.szAnnouncement)
+    else
+        self.btnSwitchFlag = 0
+        self.Button_notices:loadTextures('csclub/img_gonggao_deng.png', 'csclub/img_gonggao_zi.png', 'csclub/img_gonggao_zi.png')
+        local curIdx = cc.UserDefault:getInstance():getIntegerForKey('playway_pendant', 1)
+        self:setPlayWayDes(curIdx)
+    end
+end
 
+function NewClubInfoLayer:onRecord()
+    self:addChild(require("app.MyApp"):create(self.clubData, 3):createView("NewClubSetLayer"))
+end
+
+function NewClubInfoLayer:onGongGao()
+    self:addChild(require("app.MyApp"):create(self.clubData):createView("NewClubNoticeLayer"))
 end
 
 ------------------------------------------------------------------------
@@ -1279,7 +1302,7 @@ function NewClubInfoLayer:initPlayWayPendant()
             item:setPressedActionEnabled(true)
             item:addClickEventListener(function(sender)
                 require("common.Common"):playEffect("common/buttonplay.mp3")
-                self:selPlayWayTopBtn(idx)
+                self:selPlayWayTopBtn(idx, i)
             end)
         end
     end
@@ -1287,7 +1310,8 @@ function NewClubInfoLayer:initPlayWayPendant()
     self:selPlayWayTopBtn(curIdx)
 end
 
-function NewClubInfoLayer:selPlayWayTopBtn(idx)
+function NewClubInfoLayer:selPlayWayTopBtn(idx, index)
+    index = index or idx
     local items = self.Panel_wayTop:getChildren()
     for i,v in ipairs(items) do
         local Text_wayname = ccui.Helper:seekWidgetByName(v, "Text_wayname")
@@ -1300,6 +1324,15 @@ function NewClubInfoLayer:selPlayWayTopBtn(idx)
             Text_wayname:setColor(cc.c3b(255, 255, 255))
         end
     end
+    self:setPlayWayDes(index)
+end
+
+function NewClubInfoLayer:setPlayWayDes(index)
+    if self.btnSwitchFlag == 1 then
+        return
+    end
+    local desc = require("common.GameDesc"):getGameDesc(self.clubData.wKindID[index], self.clubData.tableParameter[index])
+    self.Text_topDes:setString(desc)
 end
 
 return NewClubInfoLayer
