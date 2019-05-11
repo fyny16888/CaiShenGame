@@ -1,14 +1,14 @@
-local EventMgr			= require("common.EventMgr")
-local EventType			= require("common.EventType")
-local NetMgr			= require("common.NetMgr")
-local NetMsgId			= require("common.NetMsgId")
-local StaticData		= require("app.static.StaticData")
-local UserData			= require("app.user.UserData")
-local Common			= require("common.Common")
-local Default			= require("common.Default")
-local GameConfig		= require("common.GameConfig")
-local Log				= require("common.Log")
-local HttpUrl			= require("common.HttpUrl")
+local EventMgr          = require("common.EventMgr")
+local EventType         = require("common.EventType")
+local NetMgr            = require("common.NetMgr")
+local NetMsgId          = require("common.NetMsgId")
+local StaticData        = require("app.static.StaticData")
+local UserData          = require("app.user.UserData")
+local Common            = require("common.Common")
+local Default           = require("common.Default")
+local GameConfig        = require("common.GameConfig")
+local Log               = require("common.Log")
+local HttpUrl           = require("common.HttpUrl")
 
 local StatisticsLayer = class("StatisticsLayer", cc.load("mvc").ViewBase)
 local MEMBER_NUM = 7
@@ -107,27 +107,27 @@ function StatisticsLayer:onCreate(params)
 end
 
 function StatisticsLayer:createToggleButton(perssCount,buttonName,callFunc,defoutCallNum)
-	for i=1,perssCount do
-		local target = self:seekWidgetByNameEx(self.csb,buttonName .. i)
-		self:addButtonEventListener(target,callFunc);
-		target.press = self:seekWidgetByNameEx(target,'Image_2')
-		target.normal = self:seekWidgetByNameEx(target,'Image_1')
-		target.imagePress = self:seekWidgetByNameEx(target,'Image_press')
-		target.imagePress:setVisible(false)
-		target.press:setVisible(true)
-		target.normal:setVisible(false)
-		target.isClick = false
-		target.ToggleState = function (self,isNormal )
-			target.normal:setVisible(isNormal)
-			target.press:setVisible(not isNormal)
-			target.imagePress:setVisible(not isNormal)
-		end
-		if defoutCallNum and i == defoutCallNum then
-			if callFunc then
-				callFunc(target)
-			end
-		end
-	end
+    for i=1,perssCount do
+        local target = self:seekWidgetByNameEx(self.csb,buttonName .. i)
+        self:addButtonEventListener(target,callFunc);
+        target.press = self:seekWidgetByNameEx(target,'Image_2')
+        target.normal = self:seekWidgetByNameEx(target,'Image_1')
+        target.imagePress = self:seekWidgetByNameEx(target,'Image_press')
+        target.imagePress:setVisible(false)
+        target.press:setVisible(true)
+        target.normal:setVisible(false)
+        target.isClick = false
+        target.ToggleState = function (self,isNormal )
+            target.normal:setVisible(isNormal)
+            target.press:setVisible(not isNormal)
+            target.imagePress:setVisible(not isNormal)
+        end
+        if defoutCallNum and i == defoutCallNum then
+            if callFunc then
+                callFunc(target)
+            end
+        end
+    end
 end
 
 function StatisticsLayer:initUI()
@@ -152,16 +152,16 @@ function StatisticsLayer:initUI()
 end
 
 function StatisticsLayer:onClickToggleRecord( sender )
-	if sender.isClick then
-		return
-	end
-	sender:ToggleState(false)
-	if self.topToggle then
-		self.topToggle:ToggleState(true)
-		self.topToggle.isClick = false
-	end
-	self.topToggle = sender
-	self.topToggle.isClick = true
+    if sender.isClick then
+        return
+    end
+    sender:ToggleState(false)
+    if self.topToggle then
+        self.topToggle:ToggleState(true)
+        self.topToggle.isClick = false
+    end
+    self.topToggle = sender
+    self.topToggle.isClick = true
     local name = sender:getName()
     if name == 'Button_player_1' then
         self.pageSate = STAITSTICS.PLAY_STATICS
@@ -171,7 +171,7 @@ function StatisticsLayer:onClickToggleRecord( sender )
         self.pageSate = STAITSTICS.PLZ_STATICS
     end
     self:showPage()
-	print('点击了',sender:getName())
+    print('点击了',sender:getName())
 end
 
 function StatisticsLayer:showPage()
@@ -192,18 +192,18 @@ end
 
 ----------------个人统计-------------
 function StatisticsLayer:addButtonEventListener(button, callback,isAction)
-	isAction = isAction or false
-	if button then
-		button:setPressedActionEnabled(isAction)
-		button:addTouchEventListener(function(sender, event)
-			if event == ccui.TouchEventType.ended then
-				Common:palyButton()
-				if callback then
-					callback(sender)
-				end
-			end
-		end)
-	end
+    isAction = isAction or false
+    if button then
+        button:setPressedActionEnabled(isAction)
+        button:addTouchEventListener(function(sender, event)
+            if event == ccui.TouchEventType.ended then
+                Common:palyButton()
+                if callback then
+                    callback(sender)
+                end
+            end
+        end)
+    end
 end
 --update---
 
@@ -565,21 +565,21 @@ function StatisticsLayer:addPlayerStatistics( data )
 end
 
 function StatisticsLayer:day_list_event(sender, evenType)
-	if evenType == ccui.ScrollviewEventType.scrollToBottom then
-		if self.day_reqState == 1 then
-			self.day_reqState = 0
+    if evenType == ccui.ScrollviewEventType.scrollToBottom then
+        if self.day_reqState == 1 then
+            self.day_reqState = 0
             self:req_clubStatics()
-		end
-	end
+        end
+    end
 end
 
 function StatisticsLayer:player_list_event(sender, evenType)
-	if evenType == ccui.ScrollviewEventType.scrollToBottom then
-		if self.play_reqState == 1 then
-			self.play_reqState = 0
+    if evenType == ccui.ScrollviewEventType.scrollToBottom then
+        if self.play_reqState == 1 then
+            self.play_reqState = 0
             self:req_player()
-		end
-	end
+        end
+    end
 end
 
 function StatisticsLayer:leftNodeChange( time,stampMin,stampMax )
@@ -609,20 +609,20 @@ end
 
 function StatisticsLayer:RET_GET_CLUB_STATISTICS_MEMBER_FINISH(event)
     local data = event._usedata
-	if data.isFinish then
-		self.play_reqState = 2 --所有结束
-	else
-		self.play_reqState = 1 --本次结束
+    if data.isFinish then
+        self.play_reqState = 2 --所有结束
+    else
+        self.play_reqState = 1 --本次结束
     end
     self.managerPage = self.managerPage + 1
 end
 
 function StatisticsLayer:RET_GET_CLUB_STATISTICS_FINISH(event)
     local data = event._usedata
-	if data.isFinish then
-		self.day_reqState = 2 --所有结束
-	else
-		self.day_reqState = 1 --本次结束
+    if data.isFinish then
+        self.day_reqState = 2 --所有结束
+    else
+        self.day_reqState = 1 --本次结束
     end
     self.clubPage = self.clubPage + 1
 end
