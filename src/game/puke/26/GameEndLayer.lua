@@ -123,11 +123,11 @@ function GameEndLayer:onCreate(pBuffer)
         uiText_name:setString(string.format("%s",var.szNickName)) 
         local uiText_surplus = ccui.Helper:seekWidgetByName(root,"Text_surplus")
         if pBuffer.bUserCardCount[key+1] >= GameCommon.gameConfig.bSpringMinCount then
-            uiText_surplus:setString(string.format("%d(全关)",pBuffer.bUserCardCount[key+1]))
+            uiText_surplus:setString(string.format("%d(全关)",pBuffer.bUserCardCount[key+1]))    
         else
             uiText_surplus:setString(string.format("%d",pBuffer.bUserCardCount[key+1]))
         end
-
+        print("++++++++++++结算+++++++",key+1,pBuffer.cbFalseSpring[key+1])
         if pBuffer.cbFalseSpring[key+1] == true then
             uiText_surplus:setString(string.format("%d(假春天)",pBuffer.bUserCardCount[key+1]))    
         end
@@ -170,7 +170,7 @@ function GameEndLayer:SUB_GR_MATCH_TABLE_FAILED(event)
         require("common.MsgBoxLayer"):create(0,nil,"游戏配置发生错误!")
     elseif data.wErrorCode == 2 then
         if  StaticData.Hide[CHANNEL_ID].btn8 == 1 and StaticData.Hide[CHANNEL_ID].btn9 == 1  then
-            require("common.MsgBoxLayer"):create(2,nil,"您的金币不足,请前往商城充值!",function() require("common.SceneMgr"):switchOperation(require("app.MyApp"):create(2):createView("MallLayer")) end)
+            require("common.MsgBoxLayer"):create(2,nil,"您的金币不足,请前往商城充值!",function()             require("common.SceneMgr"):switchOperation(require("app.MyApp"):create(2):createView("NewMallLayer"))  end)
         else
             require("common.MsgBoxLayer"):create(1,nil,"您的金币不足,请联系会长购买！",function() require("common.SceneMgr"):switchOperation(require("app.MyApp"):create():createView("GuilLayer"))  end)
         end

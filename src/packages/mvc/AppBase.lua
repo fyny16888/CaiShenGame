@@ -62,6 +62,25 @@ function AppBase:createView(name)
         name, table.concat(self.configs_.viewsRoot, ",")), 0)
 end
 
+function AppBase:createGame(name)
+    local packageName = name
+    local status, view = xpcall(function()
+            return require(packageName)
+        end, function(msg)
+        if not string.find(msg, string.format("'%s' not found:", packageName)) then
+            print("load view error: ", msg)
+        end
+    end)
+    local t = type(view)
+    if status and (t == "table" or t == "userdata") then
+        name = name:match(".+%.(%w+)$")
+        return view:create(self, name)
+    end
+    
+    error(string.format("AppBase:createView() - not found view \"%s\" in search paths \"%s\"",
+        name, table.concat(self.configs_.viewsRoot, ",")), 0)
+end
+
 function AppBase:onCreate()
 end
 

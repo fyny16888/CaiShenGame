@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="243" ctype="GameLayerObjectData">
         <Size X="1280.0000" Y="720.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_mask" ActionTag="1182189062" Tag="499" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" TouchEnable="True" ClipAble="False" BackColorAlpha="153" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_mask" ActionTag="1182189062" Tag="499" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" TouchEnable="True" ClipAble="False" BackColorAlpha="153" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="1280.0000" Y="720.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="640.0000" Y="360.0000" />
@@ -22,10 +22,10 @@
           <AbstractNodeData Name="Image_bg" ActionTag="1151426011" Tag="483" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="265.0000" RightMargin="265.0000" TopMargin="165.0000" BottomMargin="165.0000" Scale9Enable="True" LeftEage="36" RightEage="36" TopEage="29" BottomEage="29" Scale9OriginX="36" Scale9OriginY="29" Scale9Width="39" Scale9Height="31" ctype="ImageViewObjectData">
             <Size X="750.0000" Y="390.0000" />
             <Children>
-              <AbstractNodeData Name="Image_2" ActionTag="-738815918" Tag="485" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="22.5002" RightMargin="22.4998" TopMargin="21.0216" BottomMargin="18.9784" Scale9Enable="True" LeftEage="51" RightEage="51" TopEage="45" BottomEage="45" Scale9OriginX="51" Scale9OriginY="45" Scale9Width="54" Scale9Height="47" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_2" ActionTag="-738815918" Tag="485" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="22.5000" RightMargin="22.5000" TopMargin="21.0216" BottomMargin="18.9784" Scale9Enable="True" LeftEage="51" RightEage="51" TopEage="45" BottomEage="45" Scale9OriginX="51" Scale9OriginY="45" Scale9Width="54" Scale9Height="47" ctype="ImageViewObjectData">
                 <Size X="705.0000" Y="350.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="375.0002" Y="193.9784" />
+                <Position X="375.0000" Y="193.9784" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.4974" />
@@ -35,27 +35,27 @@
               <AbstractNodeData Name="Image_3" ActionTag="-656783925" Tag="486" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="21.0000" RightMargin="21.0000" TopMargin="19.9236" BottomMargin="315.0764" Scale9Enable="True" LeftEage="10" RightEage="10" TopEage="12" BottomEage="12" Scale9OriginX="10" Scale9OriginY="12" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="708.0000" Y="55.0000" />
                 <Children>
-                  <AbstractNodeData Name="Text_topName" ActionTag="-693845567" Tag="497" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="124.0247" RightMargin="436.9753" TopMargin="15.5001" BottomMargin="15.4999" FontSize="24" LabelText="海贼王的男人" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="147.0000" Y="24.0000" />
+                  <AbstractNodeData Name="Text_topName" ActionTag="-693845567" Tag="497" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="124.0247" RightMargin="436.9753" TopMargin="14.0000" BottomMargin="14.0000" FontSize="24" LabelText="海贼王的男人" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="147.0000" Y="27.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="197.5247" Y="27.4999" />
+                    <Position X="197.5247" Y="27.5000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="140" G="57" B="43" />
                     <PrePosition X="0.2790" Y="0.5000" />
-                    <PreSize X="0.2076" Y="0.4364" />
-                    <FontResource Type="Normal" Path="fonts/DFYuanW7-GB2312.ttf" Plist="" />
+                    <PreSize X="0.2076" Y="0.4909" />
+                    <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Text_playway" ActionTag="9700174" Tag="498" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="315.9115" RightMargin="150.0885" TopMargin="15.5001" BottomMargin="15.4999" FontSize="24" LabelText="邀请您玩：衡阳刘胡强" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="242.0000" Y="24.0000" />
+                  <AbstractNodeData Name="Text_playway" ActionTag="9700174" Tag="498" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="315.9115" RightMargin="149.0885" TopMargin="14.0000" BottomMargin="14.0000" FontSize="24" LabelText="邀请您玩：衡阳刘胡强" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="243.0000" Y="27.0000" />
                     <AnchorPoint ScaleY="0.5000" />
-                    <Position X="315.9115" Y="27.4999" />
+                    <Position X="315.9115" Y="27.5000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="140" G="57" B="43" />
                     <PrePosition X="0.4462" Y="0.5000" />
-                    <PreSize X="0.3418" Y="0.4364" />
-                    <FontResource Type="Normal" Path="fonts/DFYuanW7-GB2312.ttf" Plist="" />
+                    <PreSize X="0.3432" Y="0.4909" />
+                    <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -83,7 +83,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_head" ActionTag="-304178140" Tag="491" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="31.7766" RightMargin="623.2234" TopMargin="74.3160" BottomMargin="220.6840" LeftEage="36" RightEage="36" TopEage="36" BottomEage="36" Scale9OriginX="36" Scale9OriginY="36" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_head" ActionTag="-304178140" Tag="491" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="31.7750" RightMargin="623.2250" TopMargin="74.2970" BottomMargin="220.7030" LeftEage="36" RightEage="36" TopEage="36" BottomEage="36" Scale9OriginX="36" Scale9OriginY="36" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="95.0000" Y="95.0000" />
                 <Children>
                   <AbstractNodeData Name="Image_headFrame" ActionTag="232285058" Tag="492" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-14.5000" RightMargin="-14.5000" TopMargin="-14.5000" BottomMargin="-14.5000" LeftEage="36" RightEage="36" TopEage="36" BottomEage="36" Scale9OriginX="36" Scale9OriginY="36" Scale9Width="52" Scale9Height="52" ctype="ImageViewObjectData">
@@ -98,62 +98,62 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="79.2766" Y="268.1840" />
+                <Position X="79.2750" Y="268.2030" />
                 <Scale ScaleX="0.8000" ScaleY="0.8000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.1057" Y="0.6877" />
                 <PreSize X="0.1267" Y="0.2436" />
                 <FileData Type="Normal" Path="common/hall_avatar.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Text_name" ActionTag="-1600157453" Tag="493" IconVisible="False" LeftMargin="135.5868" RightMargin="435.4132" TopMargin="95.6303" BottomMargin="272.3697" FontSize="22" LabelText="昵称：我是某某某" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="179.0000" Y="22.0000" />
+              <AbstractNodeData Name="Text_name" ActionTag="-1600157453" Tag="493" IconVisible="False" LeftMargin="135.5868" RightMargin="435.4132" TopMargin="94.1303" BottomMargin="270.8697" FontSize="22" LabelText="昵称：我是某某某" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="179.0000" Y="25.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="135.5868" Y="283.3697" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="140" G="102" B="57" />
                 <PrePosition X="0.1808" Y="0.7266" />
-                <PreSize X="0.2387" Y="0.0564" />
-                <FontResource Type="Normal" Path="fonts/DFYuanW7-GB2312.ttf" Plist="" />
+                <PreSize X="0.2387" Y="0.0641" />
+                <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Text_ID" ActionTag="-491312409" Tag="494" IconVisible="False" LeftMargin="135.5867" RightMargin="491.4133" TopMargin="128.2674" BottomMargin="239.7326" FontSize="22" LabelText="ID:12345678" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="123.0000" Y="22.0000" />
+              <AbstractNodeData Name="Text_ID" ActionTag="-491312409" Tag="494" IconVisible="False" LeftMargin="135.5867" RightMargin="477.4133" TopMargin="126.7674" BottomMargin="238.2326" FontSize="22" LabelText="ID:12345678" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="137.0000" Y="25.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="135.5867" Y="250.7326" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="140" G="102" B="57" />
                 <PrePosition X="0.1808" Y="0.6429" />
-                <PreSize X="0.1640" Y="0.0564" />
-                <FontResource Type="Normal" Path="fonts/DFYuanW7-GB2312.ttf" Plist="" />
+                <PreSize X="0.1827" Y="0.0641" />
+                <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Text_roomid" ActionTag="-1778070186" Tag="495" IconVisible="False" LeftMargin="491.0674" RightMargin="80.9326" TopMargin="95.6303" BottomMargin="272.3697" FontSize="22" LabelText="房间号：12345678" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="178.0000" Y="22.0000" />
+              <AbstractNodeData Name="Text_roomid" ActionTag="-1778070186" Tag="495" IconVisible="False" LeftMargin="491.0674" RightMargin="63.9326" TopMargin="94.1303" BottomMargin="270.8697" FontSize="22" LabelText="房间号：12345678" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="195.0000" Y="25.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="491.0674" Y="283.3697" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="140" G="102" B="57" />
                 <PrePosition X="0.6548" Y="0.7266" />
-                <PreSize X="0.2373" Y="0.0564" />
-                <FontResource Type="Normal" Path="fonts/DFYuanW7-GB2312.ttf" Plist="" />
+                <PreSize X="0.2600" Y="0.0641" />
+                <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Text_jushu" ActionTag="1484591800" Tag="496" IconVisible="False" LeftMargin="491.0674" RightMargin="157.9326" TopMargin="128.2674" BottomMargin="239.7326" FontSize="22" LabelText="局数：8局" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="101.0000" Y="22.0000" />
+              <AbstractNodeData Name="Text_jushu" ActionTag="1484591800" Tag="496" IconVisible="False" LeftMargin="491.0674" RightMargin="154.9326" TopMargin="126.7674" BottomMargin="238.2326" FontSize="22" LabelText="局数：8局" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="104.0000" Y="25.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="491.0674" Y="250.7326" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="140" G="102" B="57" />
                 <PrePosition X="0.6548" Y="0.6429" />
-                <PreSize X="0.1347" Y="0.0564" />
-                <FontResource Type="Normal" Path="fonts/DFYuanW7-GB2312.ttf" Plist="" />
+                <PreSize X="0.1387" Y="0.0641" />
+                <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_3_0" ActionTag="1795997401" Tag="487" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="37.5001" RightMargin="37.4999" TopMargin="168.5608" BottomMargin="111.4392" Scale9Enable="True" LeftEage="10" RightEage="10" TopEage="12" BottomEage="12" Scale9OriginX="10" Scale9OriginY="12" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_3_0" ActionTag="1795997401" Tag="487" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="37.5000" RightMargin="37.5000" TopMargin="168.5608" BottomMargin="111.4392" Scale9Enable="True" LeftEage="10" RightEage="10" TopEage="12" BottomEage="12" Scale9OriginX="10" Scale9OriginY="12" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
                 <Size X="675.0000" Y="110.0000" />
                 <Children>
                   <AbstractNodeData Name="Text_waydes" ActionTag="-45537751" Tag="490" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="12.5000" RightMargin="12.5000" TopMargin="10.0000" BottomMargin="10.0000" IsCustomSize="True" FontSize="22" LabelText="玩法详情：玩法详情玩法详情玩法详情玩法详情玩法详情玩法详情玩法详情玩法详情玩法详情玩法详情玩法详情玩法详情" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
@@ -164,13 +164,13 @@
                     <CColor A="255" R="174" G="135" B="107" />
                     <PrePosition X="0.5000" Y="0.5000" />
                     <PreSize X="0.9630" Y="0.8182" />
-                    <FontResource Type="Normal" Path="fonts/DFYuanW7-GB2312.ttf" Plist="" />
+                    <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="375.0001" Y="166.4392" />
+                <Position X="375.0000" Y="166.4392" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.4268" />

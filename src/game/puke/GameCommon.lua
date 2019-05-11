@@ -141,38 +141,26 @@ end
 --牌资源
 function GameCommon:getCardNode(data)
  
-    local cardIndex = nil 
-    -- if CHANNEL_ID == 20 or CHANNEL_ID == 21 then 
-        cardIndex = cc.UserDefault:getInstance():getIntegerForKey(Default.UserDefault_PukeCard,0)
-    -- else
-    --     cardIndex = cc.UserDefault:getInstance():getIntegerForKey(Default.UserDefault_PukeCard,1)
-    -- end 
+    local cardIndex = cc.UserDefault:getInstance():getIntegerForKey('PDKSize',1) 
     local cardBgIndex = cc.UserDefault:getInstance():getIntegerForKey(Default.UserDefault_PukeCardBg,0)
  
-    if data == 0 or data == nil then        
-        if  GameCommon.tableConfig.wKindID == 51 or GameCommon.tableConfig.wKindID == 53 or GameCommon.tableConfig.wKindID == 55 then
-            return ccui.ImageView:create("puke/table/puke_bgnn.png")
-        else
-            if cardBgIndex == 0 then 
-                return ccui.ImageView:create("puke/table/puke_bg0.png")
-            elseif cardBgIndex == 1 then 
-                return ccui.ImageView:create("puke/table/puke_bg1.png")
-            elseif cardBgIndex == 2 then 
-                return ccui.ImageView:create("puke/table/puke_bg2.png")
-            end 
+    if data == 0 or data == nil then
+        if cardBgIndex == 0 then 
+            return ccui.ImageView:create("puke/table/puke_bg0.png")
+        elseif cardBgIndex == 1 then 
+            return ccui.ImageView:create("puke/table/puke_bg1.png")
+        elseif cardBgIndex == 2 then 
+            return ccui.ImageView:create("puke/table/puke_bg2.png")
         end 
     end
     local value = Bit:_and(data,0x0F)
     local color = Bit:_rshift(Bit:_and(data,0xF0),4)    
     local card = nil
-    if cardIndex == 0 or GameCommon.tableConfig.wKindID == 53 or GameCommon.tableConfig.wKindID == 51 then
+    if cardIndex ~= 1 then
         card = ccui.ImageView:create(string.format("puke/card/card0/puke_%d_%d.png",color,value))
     else
         card = ccui.ImageView:create(string.format("puke/card/card1/puke_%d_%d.png",color,value))
     end
-    -- if  GameCommon.tableConfig.wKindID == 55 then
-    --     card = ccui.ImageView:create(string.format("puke/card/cardniuniu/puke_%d_%d.png",color,value))
-    -- end
     return card
 end
 
@@ -246,7 +234,7 @@ function GameCommon:playAnimation(root,id, wChairID)
     if soundFile ~= "" then
         if id ~= "我先出" or wChairID == self:getRoleChairID()  then 
             require("common.Common"):playEffect(AnimationData.sound[GameCommon.player[wChairID].cbSex])
-        end         
+        end  
     end
     if (id == "我赢啦" or id == "赢")and( CHANNEL_ID == 6 or CHANNEL_ID == 7)  then 
         require("common.Common"):playEffect("common/win.mp3")

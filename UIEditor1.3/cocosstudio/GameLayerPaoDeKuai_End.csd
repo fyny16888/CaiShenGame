@@ -141,11 +141,11 @@
                               </AbstractNodeData>
                               <AbstractNodeData Name="Text_surplus" ActionTag="584332016" Tag="19" IconVisible="False" LeftMargin="341.9500" RightMargin="641.0500" TopMargin="54.5000" BottomMargin="54.5000" FontSize="28" LabelText="0" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                                 <Size X="14.0000" Y="28.0000" />
-                                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                                <Position X="348.9500" Y="68.5000" />
+                                <AnchorPoint ScaleY="0.5000" />
+                                <Position X="341.9500" Y="68.5000" />
                                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                                 <CColor A="255" R="0" G="0" B="0" />
-                                <PrePosition X="0.3500" Y="0.5000" />
+                                <PrePosition X="0.3430" Y="0.5000" />
                                 <PreSize X="0.0140" Y="0.2044" />
                                 <OutlineColor A="255" R="255" G="0" B="0" />
                                 <ShadowColor A="255" R="110" G="110" B="110" />
@@ -239,10 +239,10 @@
                                 <OutlineColor A="255" R="255" G="0" B="0" />
                                 <ShadowColor A="255" R="110" G="110" B="110" />
                               </AbstractNodeData>
-                              <AbstractNodeData Name="Text_surplus" ActionTag="30757169" Tag="40" IconVisible="False" LeftMargin="341.9500" RightMargin="641.0500" TopMargin="54.5000" BottomMargin="54.5000" FontSize="28" LabelText="0" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                              <AbstractNodeData Name="Text_surplus" ActionTag="30757169" Tag="40" IconVisible="False" LeftMargin="341.9502" RightMargin="641.0498" TopMargin="54.4999" BottomMargin="54.5001" FontSize="28" LabelText="0" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                                 <Size X="14.0000" Y="28.0000" />
                                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                                <Position X="348.9500" Y="68.5000" />
+                                <Position X="348.9502" Y="68.5001" />
                                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                                 <CColor A="255" R="0" G="0" B="0" />
                                 <PrePosition X="0.3500" Y="0.5000" />
