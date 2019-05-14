@@ -105,6 +105,14 @@ function Net:sendMsgToSvr(mainCmdId,subCmdId,strCmd,...)
         end
     end
     self.cppFunc:endSendBuf()
+
+    if mainCmdId ~= 0 or (subCmdId ~= 1 and subCmdId ~= 3) then
+        print('-----------------------------------------')
+        printInfo(string.format("socketid = %d send msg：mainCmdId = %d, subCmdId=%d,strCmd=%s",self.id,mainCmdId,subCmdId,strCmd))
+        print('-----------------------------------------')
+        printInfo(arg)
+    end
+    
     local ret = self.cppFunc:sendSvrBuf()
     if ret == -1 then
         return false

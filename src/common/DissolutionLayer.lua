@@ -47,21 +47,22 @@ function DissolutionLayer:onCreate(wChairID,player,data)
     self:addChild(csb)
     self.root = csb:getChildByName("Panel_root")
     --进度动作
-    local uiText_countdown = ccui.Helper:seekWidgetByName(self.root,"Text_countdown")
-    uiText_countdown:setString(string.format("%02d:%02d",math.floor(data.dwDisbandedTime/60),data.dwDisbandedTime%60))
-    self.uiLoadingBar_pro = ccui.Helper:seekWidgetByName(self.root,"LoadingBar")
-    self.uiLoadingBar_pro:setPercent(data.dwDisbandedTime*0.56)
-    uiText_countdown:runAction(cc.RepeatForever:create(cc.Sequence:create(
-        cc.DelayTime:create(1),
-        cc.CallFunc:create(function(sender,event) 
-            uiText_countdown:setString(string.format("%02d:%02d",math.floor(data.dwDisbandedTime/60),data.dwDisbandedTime%60))
-            self.uiLoadingBar_pro:setPercent(data.dwDisbandedTime*0.56)
-            data.dwDisbandedTime = data.dwDisbandedTime - 1
-            if data.dwDisbandedTime < 0 then
-                data.dwDisbandedTime = 0
-            end        
-        end)
-    )))
+    -- local uiText_countdown = ccui.Helper:seekWidgetByName(self.root,"Text_countdown")
+    -- uiText_countdown:setString(string.format("%02d:%02d",math.floor(data.dwDisbandedTime/60),data.dwDisbandedTime%60))
+    -- self.uiLoadingBar_pro = ccui.Helper:seekWidgetByName(self.root,"LoadingBar")
+    -- self.uiLoadingBar_pro:setPercent(data.dwDisbandedTime*0.56)
+    -- uiText_countdown:runAction(cc.RepeatForever:create(cc.Sequence:create(
+    --     cc.DelayTime:create(1),
+    --     cc.CallFunc:create(function(sender,event) 
+    --         uiText_countdown:setString(string.format("%02d:%02d",math.floor(data.dwDisbandedTime/60),data.dwDisbandedTime%60))
+    --         self.uiLoadingBar_pro:setPercent(data.dwDisbandedTime*0.56)
+    --         data.dwDisbandedTime = data.dwDisbandedTime - 1
+    --         if data.dwDisbandedTime < 0 then
+    --             data.dwDisbandedTime = 0
+    --         end        
+    --     end)
+    -- )))
+
     local count = 0
     for i = 1, 8 do
         if data.wKindID ~= nil and data.wKindID  == 42 then 
@@ -74,17 +75,17 @@ function DissolutionLayer:onCreate(wChairID,player,data)
             end
         end 
     end
-    local uiPanel_contents = nil  
-    local uiPanel_contents6 = ccui.Helper:seekWidgetByName(self.root,"Panel_contents")
-    local uiPanel_contents8 = ccui.Helper:seekWidgetByName(self.root,"Panel_contents8")
-    if count > 6  then 
-        uiPanel_contents6:removeFromParent()
-        uiPanel_contents = uiPanel_contents8
-    else
-        uiPanel_contents8:removeFromParent()
-        uiPanel_contents = uiPanel_contents6
-    end 
-
+    -- local uiPanel_contents = nil  
+    -- local uiPanel_contents6 = ccui.Helper:seekWidgetByName(self.root,"Panel_contents")
+    -- local uiPanel_contents8 = ccui.Helper:seekWidgetByName(self.root,"Panel_contents8")
+    -- if count > 6  then 
+    --     uiPanel_contents6:removeFromParent()
+    --     uiPanel_contents = uiPanel_contents8
+    -- else
+    --     uiPanel_contents8:removeFromParent()
+    --     uiPanel_contents = uiPanel_contents6
+    -- end 
+    local uiPanel_contents = ccui.Helper:seekWidgetByName(self.root,"Panel_contents")
     local uiListView_content = ccui.Helper:seekWidgetByName(self.root,"ListView_content")
     local uiPanel_player = uiListView_content:getItem(0)
     uiPanel_player:retain()
@@ -101,53 +102,61 @@ function DissolutionLayer:onCreate(wChairID,player,data)
                     local item = uiPanel_player:clone()
                     uiListView_content:pushBackCustomItem(item)
                     local uiImage_avatar = ccui.Helper:seekWidgetByName(item,"Image_avatar")
-                    Common:requestUserAvatar(data.dwUserIDALL[i],player[i].szPto,uiImage_avatar,"img")
+                    Common:requestUserAvatar(data.dwUserIDALL[i],player[i].szPto,uiImage_avatar,"clip")
                     local uiText_name = ccui.Helper:seekWidgetByName(item,"Text_name")
                     uiText_name:setTextColor(color)
                     uiText_name:setString(data.szNickNameALL[i])
-                    local uiImage_displayimg = ccui.Helper:seekWidgetByName(item,"Image_displayimg")
+                    local Text_displaydec = ccui.Helper:seekWidgetByName(item,"Text_displaydec")
+                    Text_displaydec:setColor(cc.c3b(74, 90, 105))
                     if data.cbDisbandeState[i] == 1 then
-                        uiImage_displayimg:loadTexture("common/Dissolution01.png")
-                        uiImage_displayimg:setScale(1.1)
+                        -- uiImage_displayimg:loadTexture("common/Dissolution01.png")
+                        -- uiImage_displayimg:setScale(1.1)
+                        Text_displaydec:setString('同意')
                         if data.wAdvocateDisbandedID == i-1 then
                             advocateName = data.szNickNameALL[i]
                         end
                     elseif data.cbDisbandeState[i] == 2 then
-                        uiImage_displayimg:loadTexture("common/Dissolution01.png")
+                        -- uiImage_displayimg:loadTexture("common/Dissolution01.png")
+                        Text_displaydec:setString('同意')
                         refuseName = data.szNickNameALL[i]
                     else
                         if i-1 == wChairID then
                             isSwitch = false
                         end
-                        uiImage_displayimg:loadTexture("common/Dissolution02.png")
-                        uiImage_displayimg:setScale(1,0.7)
+                        -- uiImage_displayimg:loadTexture("common/Dissolution02.png")
+                        -- uiImage_displayimg:setScale(1,0.7)
+                        Text_displaydec:setString('选择中')
                     end
                 end
-            else 
+            else
                 if data.dwUserIDALL[i] ~= 0 and player ~= nil and player[i-1] ~= nil then
                     local item = uiPanel_player:clone()
                     uiListView_content:pushBackCustomItem(item)
                     local uiImage_avatar = ccui.Helper:seekWidgetByName(item,"Image_avatar")
-                    Common:requestUserAvatar(data.dwUserIDALL[i],player[i-1].szPto,uiImage_avatar,"img")
+                    Common:requestUserAvatar(data.dwUserIDALL[i],player[i-1].szPto,uiImage_avatar,"clip")
                     local uiText_name = ccui.Helper:seekWidgetByName(item,"Text_name")
                     uiText_name:setTextColor(color)
                     uiText_name:setString(data.szNickNameALL[i])
-                    local uiImage_displayimg = ccui.Helper:seekWidgetByName(item,"Image_displayimg")
+                    local Text_displaydec = ccui.Helper:seekWidgetByName(item,"Text_displaydec")
+                    Text_displaydec:setColor(cc.c3b(74, 90, 105))
                     if data.cbDisbandeState[i] == 1 then
-                        uiImage_displayimg:loadTexture("common/Dissolution01.png")
-                        uiImage_displayimg:setScale(1.1)
+                        -- uiImage_displayimg:loadTexture("common/Dissolution01.png")
+                        -- uiImage_displayimg:setScale(1.1)
+                        Text_displaydec:setString('同意')
                         if data.wAdvocateDisbandedID == i-1 then
                             advocateName = data.szNickNameALL[i]
                         end
                     elseif data.cbDisbandeState[i] == 2 then
-                        uiImage_displayimg:loadTexture("common/Dissolution01.png")
+                        -- uiImage_displayimg:loadTexture("common/Dissolution01.png")
+                        Text_displaydec:setString('同意')
                         refuseName = data.szNickNameALL[i]
                     else
                         if i-1 == wChairID then
                             isSwitch = false
                         end
-                        uiImage_displayimg:loadTexture("common/Dissolution02.png")
-                        uiImage_displayimg:setScale(1,0.7)
+                        -- uiImage_displayimg:loadTexture("common/Dissolution02.png")
+                        -- uiImage_displayimg:setScale(1,0.7)
+                        Text_displaydec:setString('选择中')
                     end     
                 end 
             end 
@@ -183,8 +192,21 @@ function DissolutionLayer:onCreate(wChairID,player,data)
         end
     end 
     if advocateName ~= "" then
-        local uiText_tips = ccui.Helper:seekWidgetByName(self.root,"Text_tips")
-        uiText_tips:setString(string.format(uiText_tips:getString(),advocateName))
+        -- local uiText_tips = ccui.Helper:seekWidgetByName(self.root,"Text_tips")
+        -- uiText_tips:setString(string.format(uiText_tips:getString(),advocateName))
+
+        local Text_tips = ccui.Helper:seekWidgetByName(self.root,"Text_tips")
+        Text_tips:runAction(cc.RepeatForever:create(cc.Sequence:create(
+            cc.DelayTime:create(1),
+            cc.CallFunc:create(function(sender,event)
+                local des = string.format("%s 发起解散申请，牌桌将于(%02d:%02d)后自动解散",advocateName, math.floor(data.dwDisbandedTime/60),data.dwDisbandedTime%60)
+                Text_tips:setString(des)
+                data.dwDisbandedTime = data.dwDisbandedTime - 1
+                if data.dwDisbandedTime < 0 then
+                    data.dwDisbandedTime = 0
+                end
+            end)
+        )))
     end
     if refuseName ~= "" then
         self:runAction(cc.Sequence:create(cc.DelayTime:create(0),cc.RemoveSelf:create()))

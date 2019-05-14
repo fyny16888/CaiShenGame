@@ -700,14 +700,14 @@ function TableLayer:initUI()
     local function onEventExpression(sender,event)
         if event == ccui.TouchEventType.ended then
             Common:palyButton()
-            local child = self:getChildByName('PDKChat')
-			if child and child:getName() == 'PDKChat' then
+            local child = self:getChildByName('ChatLayer')
+			if child and child:getName() == 'ChatLayer' then
 				child:setVisible(true)
 				return true
 			end
-			local path = self:requireClass('PDKChat')
+			local path = self:requireClass('ChatLayer')
 			local box = require("app.MyApp"):create():createGame(path)
-			box:setName('PDKChat')
+			box:setName('ChatLayer')
 			self:addChild(box)
         end
     end
@@ -1261,7 +1261,7 @@ end
 
 function TableLayer:showPlayerInfo(infoTbl)       -- 查看玩家信息
     Common:palyButton()
-    require("common.SceneMgr"):switchOperation(require("app.MyApp"):create(infoTbl, self):createGame("game.puke.PDKPersonInfor"))
+    require("common.SceneMgr"):switchOperation(require("app.MyApp"):create(infoTbl, self):createGame("game.puke.PersonInfor"))
     --require("common.PersonalLayer"):create(GameCommon.tableConfig.wKindID,dwUserID,dwShamUserID)
 end
 function TableLayer:showChat(pBuffer)

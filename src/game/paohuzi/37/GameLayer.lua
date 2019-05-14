@@ -344,7 +344,7 @@ function GameLayer:readBuffer(luaFunc, mainCmdID, subCmdID)
             _tagMsg.pBuffer.dwPlayTimeCount = luaFunc:readRecvDWORD()  
             _tagMsg.pBuffer.dwPlayAddr = luaFunc:readRecvDWORD() 
             _tagMsg.pBuffer.dwShamUserID = luaFunc:readRecvDWORD()
-            self.tableLayer:showPlayerInfo(_tagMsg.pBuffer.dwUserID,_tagMsg.pBuffer.dwShamUserID)
+            self.tableLayer:showPlayerInfo(_tagMsg.pBuffer)
             return true
             
         elseif subCmdID == NetMsgId.SUB_GR_SEND_CHAT then
@@ -1031,6 +1031,8 @@ function GameLayer:updatePlayerInfo()
             self:updatePlayerHuXi(wChairID)            
         end
     end
+    
+    self.tableLayer:refreshTableInfo()
     if online then 
         local uiButton_Invitation = ccui.Helper:seekWidgetByName(self.root,"Button_Invitation")
         uiButton_Invitation:setVisible(false)

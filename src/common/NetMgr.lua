@@ -88,14 +88,13 @@ function cc.exports.OnNetRecvMsg(netID)
     end
     local mainCmdID = netInstance.cppFunc:GetMainCmdID()
     local subCmdID = netInstance.cppFunc:GetSubCmdID()
-    if netID == 2 and  mainCmdID == 0 and subCmdID == 1 then
-    elseif netID == 2 and  mainCmdID == 0 and subCmdID == 3 then 
-    elseif netID == 3 and  mainCmdID == 0 and subCmdID == 1 then 
-    elseif netID == 3 and  mainCmdID == 0 and subCmdID == 3 then 
-    elseif netID == 2 and  mainCmdID == 110 and subCmdID == 11000 then 
-    else
+    
+    if mainCmdID ~= 0 and subCmdID ~= 1 then
+        print('========================================================')
         printInfo(string.format("接受消息：netID = %d, mainCmdID = %d, subCmdID = %d",netID,mainCmdID,subCmdID))
+        print('========================================================')
     end
+    
     EventMgr:dispatch("EVENT_TYPE_NET_RECV_MESSAGE",netID)
     
 end

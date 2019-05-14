@@ -12,75 +12,37 @@
               <AbstractNodeData Name="Panel_Blackscreen" ActionTag="-217206381" Tag="373" IconVisible="False" ClipAble="False" BackColorAlpha="179" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="1280.0000" Y="720.0000" />
                 <Children>
-                  <AbstractNodeData Name="Panel_ok" ActionTag="1069081269" Tag="19" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="358.0000" RightMargin="358.0000" TopMargin="176.0000" BottomMargin="176.0000" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" LeftEage="310" RightEage="253" TopEage="121" BottomEage="121" Scale9OriginX="310" Scale9OriginY="121" Scale9Width="254" Scale9Height="193" ctype="PanelObjectData">
+                  <AbstractNodeData Name="Panel_ok" ActionTag="1069081269" Tag="19" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="358.0000" RightMargin="358.0000" TopMargin="176.0000" BottomMargin="176.0000" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" LeftEage="310" RightEage="253" TopEage="121" BottomEage="121" Scale9OriginX="310" Scale9OriginY="121" Scale9Width="205" Scale9Height="216" ctype="PanelObjectData">
                     <Size X="564.0000" Y="368.0000" />
                     <Children>
-                      <AbstractNodeData Name="Image_1" ActionTag="-1740235526" Tag="871" IconVisible="False" LeftMargin="215.0140" RightMargin="286.9860" TopMargin="25.7837" BottomMargin="280.2163" LeftEage="20" RightEage="20" TopEage="20" BottomEage="20" Scale9OriginX="20" Scale9OriginY="20" Scale9Width="22" Scale9Height="22" ctype="ImageViewObjectData">
-                        <Size X="62.0000" Y="62.0000" />
-                        <Children>
-                          <AbstractNodeData Name="Text_1" ActionTag="-1121667378" Tag="872" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="14.0000" BottomMargin="14.0000" FontSize="30" LabelText="提" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                            <Size X="32.0000" Y="34.0000" />
-                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                            <Position X="31.0000" Y="31.0000" />
-                            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                            <CColor A="255" R="255" G="255" B="255" />
-                            <PrePosition X="0.5000" Y="0.5000" />
-                            <PreSize X="0.5161" Y="0.5484" />
-                            <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
-                            <OutlineColor A="255" R="255" G="0" B="0" />
-                            <ShadowColor A="255" R="110" G="110" B="110" />
-                          </AbstractNodeData>
-                        </Children>
+                      <AbstractNodeData Name="Image_1" ActionTag="-1740235526" Tag="871" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="200.0001" RightMargin="199.9999" TopMargin="22.2840" BottomMargin="290.7160" LeftEage="20" RightEage="20" TopEage="20" BottomEage="20" Scale9OriginX="20" Scale9OriginY="20" Scale9Width="124" Scale9Height="15" ctype="ImageViewObjectData">
+                        <Size X="164.0000" Y="55.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="246.0140" Y="311.2163" />
+                        <Position X="282.0001" Y="318.2160" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.4362" Y="0.8457" />
-                        <PreSize X="0.1099" Y="0.1685" />
-                        <FileData Type="Normal" Path="public/titel_1.png" Plist="" />
+                        <PrePosition X="0.5000" Y="0.8647" />
+                        <PreSize X="0.2908" Y="0.1495" />
+                        <FileData Type="Normal" Path="public/xiaotanchuan_42.png" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="Image_1_0" ActionTag="440058263" Tag="873" IconVisible="False" LeftMargin="311.2078" RightMargin="190.7922" TopMargin="25.7837" BottomMargin="280.2163" LeftEage="20" RightEage="20" TopEage="20" BottomEage="20" Scale9OriginX="20" Scale9OriginY="20" Scale9Width="22" Scale9Height="22" ctype="ImageViewObjectData">
-                        <Size X="62.0000" Y="62.0000" />
-                        <Children>
-                          <AbstractNodeData Name="Text_1" ActionTag="1658481594" Tag="874" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="14.5000" RightMargin="14.5000" TopMargin="14.0000" BottomMargin="14.0000" FontSize="30" LabelText="示" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                            <Size X="33.0000" Y="34.0000" />
-                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                            <Position X="31.0000" Y="31.0000" />
-                            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                            <CColor A="255" R="255" G="255" B="255" />
-                            <PrePosition X="0.5000" Y="0.5000" />
-                            <PreSize X="0.5323" Y="0.5484" />
-                            <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
-                            <OutlineColor A="255" R="255" G="0" B="0" />
-                            <ShadowColor A="255" R="110" G="110" B="110" />
-                          </AbstractNodeData>
-                        </Children>
-                        <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="342.2078" Y="311.2163" />
-                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                        <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.6068" Y="0.8457" />
-                        <PreSize X="0.1099" Y="0.1685" />
-                        <FileData Type="Normal" Path="public/titel_1.png" Plist="" />
-                      </AbstractNodeData>
-                      <AbstractNodeData Name="Text_contents" ActionTag="2066052103" Tag="20" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="23.0375" RightMargin="5.9625" TopMargin="95.0352" BottomMargin="92.9648" IsCustomSize="True" FontSize="32" LabelText="你确定？" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                      <AbstractNodeData Name="Text_contents" ActionTag="2066052103" Tag="20" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="14.5000" RightMargin="14.5000" TopMargin="95.0304" BottomMargin="92.9696" IsCustomSize="True" FontSize="32" LabelText="你确定？" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                         <Size X="535.0000" Y="180.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="290.5375" Y="182.9648" />
+                        <Position X="282.0000" Y="182.9696" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="0" G="0" B="0" />
-                        <PrePosition X="0.5151" Y="0.4972" />
+                        <PrePosition X="0.5000" Y="0.4972" />
                         <PreSize X="0.9486" Y="0.4891" />
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="Button_ok" ActionTag="-930211685" Tag="21" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="195.7965" RightMargin="187.2035" TopMargin="283.5009" BottomMargin="9.4991" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="151" Scale9Height="53" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="Button_ok" ActionTag="-930211685" Tag="21" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="195.7866" RightMargin="187.2134" TopMargin="293.5011" BottomMargin="-0.5011" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="151" Scale9Height="53" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="181.0000" Y="75.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="286.2965" Y="46.9991" />
+                        <Position X="286.2866" Y="36.9989" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.5076" Y="0.1277" />
+                        <PrePosition X="0.5076" Y="0.1005" />
                         <PreSize X="0.3209" Y="0.2038" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="Normal" Path="public/btn_ok_s.png" Plist="" />
@@ -96,70 +58,32 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
                     <PreSize X="0.4406" Y="0.5111" />
-                    <FileData Type="Normal" Path="public/img_xiaotanchuang.png" Plist="" />
+                    <FileData Type="Normal" Path="public/bac_xiaotanchuan.png" Plist="" />
                     <SingleColor A="255" R="150" G="200" B="255" />
                     <FirstColor A="255" R="150" G="200" B="255" />
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Panel_okCancel" Visible="False" ActionTag="-1686124942" Tag="3" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="356.5000" RightMargin="356.5000" TopMargin="176.0000" BottomMargin="176.0000" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" LeftEage="186" RightEage="186" TopEage="121" BottomEage="121" Scale9OriginX="186" Scale9OriginY="121" Scale9Width="445" Scale9Height="193" ctype="PanelObjectData">
+                  <AbstractNodeData Name="Panel_okCancel" Visible="False" ActionTag="-1686124942" Tag="3" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="356.5000" RightMargin="356.5000" TopMargin="176.0000" BottomMargin="176.0000" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" LeftEage="186" RightEage="186" TopEage="121" BottomEage="121" Scale9OriginX="186" Scale9OriginY="121" Scale9Width="396" Scale9Height="216" ctype="PanelObjectData">
                     <Size X="567.0000" Y="368.0000" />
                     <Children>
-                      <AbstractNodeData Name="Image_1_1" ActionTag="657679247" Tag="875" IconVisible="False" LeftMargin="215.0128" RightMargin="289.9872" TopMargin="29.7834" BottomMargin="276.2166" LeftEage="20" RightEage="20" TopEage="20" BottomEage="20" Scale9OriginX="20" Scale9OriginY="20" Scale9Width="22" Scale9Height="22" ctype="ImageViewObjectData">
-                        <Size X="62.0000" Y="62.0000" />
-                        <Children>
-                          <AbstractNodeData Name="Text_1" ActionTag="60222786" Tag="876" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="14.0000" BottomMargin="14.0000" FontSize="30" LabelText="提" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                            <Size X="32.0000" Y="34.0000" />
-                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                            <Position X="31.0000" Y="31.0000" />
-                            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                            <CColor A="255" R="255" G="255" B="255" />
-                            <PrePosition X="0.5000" Y="0.5000" />
-                            <PreSize X="0.5161" Y="0.5484" />
-                            <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
-                            <OutlineColor A="255" R="255" G="0" B="0" />
-                            <ShadowColor A="255" R="110" G="110" B="110" />
-                          </AbstractNodeData>
-                        </Children>
+                      <AbstractNodeData Name="Image_1_1" ActionTag="657679247" Tag="875" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="201.5001" RightMargin="201.4999" TopMargin="22.2837" BottomMargin="290.7163" LeftEage="20" RightEage="20" TopEage="20" BottomEage="20" Scale9OriginX="20" Scale9OriginY="20" Scale9Width="124" Scale9Height="15" ctype="ImageViewObjectData">
+                        <Size X="164.0000" Y="55.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="246.0128" Y="307.2166" />
+                        <Position X="283.5001" Y="318.2163" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.4339" Y="0.8348" />
-                        <PreSize X="0.1093" Y="0.1685" />
-                        <FileData Type="Normal" Path="public/titel_1.png" Plist="" />
+                        <PrePosition X="0.5000" Y="0.8647" />
+                        <PreSize X="0.2892" Y="0.1495" />
+                        <FileData Type="Normal" Path="public/xiaotanchuan_42.png" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="Image_1_0_0" ActionTag="55382565" Tag="877" IconVisible="False" LeftMargin="311.2068" RightMargin="193.7932" TopMargin="29.7834" BottomMargin="276.2166" LeftEage="20" RightEage="20" TopEage="20" BottomEage="20" Scale9OriginX="20" Scale9OriginY="20" Scale9Width="22" Scale9Height="22" ctype="ImageViewObjectData">
-                        <Size X="62.0000" Y="62.0000" />
-                        <Children>
-                          <AbstractNodeData Name="Text_1" ActionTag="1946602616" Tag="878" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="14.5000" RightMargin="14.5000" TopMargin="14.0000" BottomMargin="14.0000" FontSize="30" LabelText="示" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                            <Size X="33.0000" Y="34.0000" />
-                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                            <Position X="31.0000" Y="31.0000" />
-                            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                            <CColor A="255" R="255" G="255" B="255" />
-                            <PrePosition X="0.5000" Y="0.5000" />
-                            <PreSize X="0.5323" Y="0.5484" />
-                            <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
-                            <OutlineColor A="255" R="255" G="0" B="0" />
-                            <ShadowColor A="255" R="110" G="110" B="110" />
-                          </AbstractNodeData>
-                        </Children>
-                        <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="342.2068" Y="307.2166" />
-                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                        <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.6035" Y="0.8348" />
-                        <PreSize X="0.1093" Y="0.1685" />
-                        <FileData Type="Normal" Path="public/titel_1.png" Plist="" />
-                      </AbstractNodeData>
-                      <AbstractNodeData Name="Text_contents" ActionTag="-72597872" Tag="5" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="23.9994" RightMargin="8.0006" TopMargin="102.0068" BottomMargin="85.9932" IsCustomSize="True" FontSize="28" LabelText="你确定？&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                      <AbstractNodeData Name="Text_contents" ActionTag="-72597872" Tag="5" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="23.9947" RightMargin="8.0053" TopMargin="96.0226" BottomMargin="91.9774" IsCustomSize="True" FontSize="28" LabelText="你确定？&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                         <Size X="535.0000" Y="180.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="291.4994" Y="175.9932" />
+                        <Position X="291.4947" Y="181.9774" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="0" G="0" B="0" />
-                        <PrePosition X="0.5141" Y="0.4782" />
+                        <PrePosition X="0.5141" Y="0.4945" />
                         <PreSize X="0.9436" Y="0.4891" />
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
@@ -201,70 +125,32 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
                     <PreSize X="0.4430" Y="0.5111" />
-                    <FileData Type="Normal" Path="public/img_xiaotanchuang.png" Plist="" />
+                    <FileData Type="Normal" Path="public/bac_xiaotanchuan.png" Plist="" />
                     <SingleColor A="255" R="150" G="200" B="255" />
                     <FirstColor A="255" R="150" G="200" B="255" />
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Panel_agreeCancel" Visible="False" ActionTag="750957569" Tag="10" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="358.0000" RightMargin="358.0000" TopMargin="176.0000" BottomMargin="176.0000" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" LeftEage="186" RightEage="186" TopEage="214" BottomEage="154" Scale9OriginX="186" Scale9OriginY="214" Scale9Width="445" Scale9Height="67" ctype="PanelObjectData">
+                  <AbstractNodeData Name="Panel_agreeCancel" Visible="False" ActionTag="750957569" Tag="10" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="358.0000" RightMargin="358.0000" TopMargin="176.0000" BottomMargin="176.0000" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" LeftEage="186" RightEage="186" TopEage="214" BottomEage="154" Scale9OriginX="186" Scale9OriginY="214" Scale9Width="396" Scale9Height="90" ctype="PanelObjectData">
                     <Size X="564.0000" Y="368.0000" />
                     <Children>
-                      <AbstractNodeData Name="Image_1_1_0" ActionTag="-468111290" Tag="879" IconVisible="False" LeftMargin="209.0089" RightMargin="292.9911" TopMargin="29.7827" BottomMargin="276.2173" LeftEage="20" RightEage="20" TopEage="20" BottomEage="20" Scale9OriginX="20" Scale9OriginY="20" Scale9Width="22" Scale9Height="22" ctype="ImageViewObjectData">
-                        <Size X="62.0000" Y="62.0000" />
-                        <Children>
-                          <AbstractNodeData Name="Text_1" ActionTag="-2047535279" Tag="880" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="14.0000" BottomMargin="14.0000" FontSize="30" LabelText="提" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                            <Size X="32.0000" Y="34.0000" />
-                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                            <Position X="31.0000" Y="31.0000" />
-                            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                            <CColor A="255" R="255" G="255" B="255" />
-                            <PrePosition X="0.5000" Y="0.5000" />
-                            <PreSize X="0.5161" Y="0.5484" />
-                            <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
-                            <OutlineColor A="255" R="255" G="0" B="0" />
-                            <ShadowColor A="255" R="110" G="110" B="110" />
-                          </AbstractNodeData>
-                        </Children>
+                      <AbstractNodeData Name="Image_1_1_0" ActionTag="-468111290" Tag="879" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="200.0001" RightMargin="199.9999" TopMargin="23.2828" BottomMargin="289.7172" LeftEage="20" RightEage="20" TopEage="20" BottomEage="20" Scale9OriginX="20" Scale9OriginY="20" Scale9Width="124" Scale9Height="15" ctype="ImageViewObjectData">
+                        <Size X="164.0000" Y="55.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="240.0089" Y="307.2173" />
+                        <Position X="282.0001" Y="317.2172" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.4255" Y="0.8348" />
-                        <PreSize X="0.1099" Y="0.1685" />
-                        <FileData Type="Normal" Path="public/titel_1.png" Plist="" />
+                        <PrePosition X="0.5000" Y="0.8620" />
+                        <PreSize X="0.2908" Y="0.1495" />
+                        <FileData Type="Normal" Path="public/xiaotanchuan_42.png" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="Image_1_0_0_0" ActionTag="911848088" Tag="881" IconVisible="False" LeftMargin="305.2032" RightMargin="196.7968" TopMargin="29.7827" BottomMargin="276.2173" LeftEage="20" RightEage="20" TopEage="20" BottomEage="20" Scale9OriginX="20" Scale9OriginY="20" Scale9Width="22" Scale9Height="22" ctype="ImageViewObjectData">
-                        <Size X="62.0000" Y="62.0000" />
-                        <Children>
-                          <AbstractNodeData Name="Text_1" ActionTag="-1625636644" Tag="882" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="14.5000" RightMargin="14.5000" TopMargin="14.0000" BottomMargin="14.0000" FontSize="30" LabelText="示" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                            <Size X="33.0000" Y="34.0000" />
-                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                            <Position X="31.0000" Y="31.0000" />
-                            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                            <CColor A="255" R="255" G="255" B="255" />
-                            <PrePosition X="0.5000" Y="0.5000" />
-                            <PreSize X="0.5323" Y="0.5484" />
-                            <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
-                            <OutlineColor A="255" R="255" G="0" B="0" />
-                            <ShadowColor A="255" R="110" G="110" B="110" />
-                          </AbstractNodeData>
-                        </Children>
-                        <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="336.2032" Y="307.2173" />
-                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                        <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.5961" Y="0.8348" />
-                        <PreSize X="0.1099" Y="0.1685" />
-                        <FileData Type="Normal" Path="public/titel_1.png" Plist="" />
-                      </AbstractNodeData>
-                      <AbstractNodeData Name="Text_contents" ActionTag="1700747357" Tag="11" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="19.4990" RightMargin="9.5010" TopMargin="89.0066" BottomMargin="98.9934" IsCustomSize="True" FontSize="32" LabelText="你确定？" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                      <AbstractNodeData Name="Text_contents" ActionTag="1700747357" Tag="11" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="19.5197" RightMargin="9.4803" TopMargin="90.9952" BottomMargin="97.0048" IsCustomSize="True" FontSize="32" LabelText="你确定？" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                         <Size X="535.0000" Y="180.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="286.9990" Y="188.9934" />
+                        <Position X="287.0197" Y="187.0048" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="0" G="0" B="0" />
-                        <PrePosition X="0.5089" Y="0.5136" />
+                        <PrePosition X="0.5089" Y="0.5082" />
                         <PreSize X="0.9486" Y="0.4891" />
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
@@ -306,67 +192,29 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
                     <PreSize X="0.4406" Y="0.5111" />
-                    <FileData Type="Normal" Path="public/img_xiaotanchuang.png" Plist="" />
+                    <FileData Type="Normal" Path="public/bac_xiaotanchuan.png" Plist="" />
                     <SingleColor A="255" R="150" G="200" B="255" />
                     <FirstColor A="255" R="150" G="200" B="255" />
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Panel_msgcopy" Visible="False" ActionTag="-814604415" Tag="1465" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="367.9840" RightMargin="348.0160" TopMargin="186.0080" BottomMargin="165.9920" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" LeftEage="186" RightEage="186" TopEage="121" BottomEage="121" Scale9OriginX="186" Scale9OriginY="121" Scale9Width="445" Scale9Height="193" ctype="PanelObjectData">
+                  <AbstractNodeData Name="Panel_msgcopy" Visible="False" ActionTag="-814604415" Tag="1465" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="367.9840" RightMargin="348.0160" TopMargin="186.0080" BottomMargin="165.9920" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" LeftEage="186" RightEage="186" TopEage="121" BottomEage="121" Scale9OriginX="186" Scale9OriginY="121" Scale9Width="396" Scale9Height="216" ctype="PanelObjectData">
                     <Size X="564.0000" Y="368.0000" />
                     <Children>
-                      <AbstractNodeData Name="Image_1_1_0_0" ActionTag="1827739543" Tag="883" IconVisible="False" LeftMargin="214.0080" RightMargin="287.9920" TopMargin="28.7831" BottomMargin="277.2169" LeftEage="20" RightEage="20" TopEage="20" BottomEage="20" Scale9OriginX="20" Scale9OriginY="20" Scale9Width="22" Scale9Height="22" ctype="ImageViewObjectData">
-                        <Size X="62.0000" Y="62.0000" />
-                        <Children>
-                          <AbstractNodeData Name="Text_1" ActionTag="217956673" Tag="884" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="14.0000" BottomMargin="14.0000" FontSize="30" LabelText="提" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                            <Size X="32.0000" Y="34.0000" />
-                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                            <Position X="31.0000" Y="31.0000" />
-                            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                            <CColor A="255" R="255" G="255" B="255" />
-                            <PrePosition X="0.5000" Y="0.5000" />
-                            <PreSize X="0.5161" Y="0.5484" />
-                            <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
-                            <OutlineColor A="255" R="255" G="0" B="0" />
-                            <ShadowColor A="255" R="110" G="110" B="110" />
-                          </AbstractNodeData>
-                        </Children>
+                      <AbstractNodeData Name="Image_1_1_0_0" ActionTag="1827739543" Tag="883" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="200.0000" RightMargin="200.0000" TopMargin="22.2832" BottomMargin="290.7168" LeftEage="20" RightEage="20" TopEage="20" BottomEage="20" Scale9OriginX="20" Scale9OriginY="20" Scale9Width="124" Scale9Height="15" ctype="ImageViewObjectData">
+                        <Size X="164.0000" Y="55.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="245.0080" Y="308.2169" />
+                        <Position X="282.0000" Y="318.2168" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.4344" Y="0.8375" />
-                        <PreSize X="0.1099" Y="0.1685" />
-                        <FileData Type="Normal" Path="public/titel_1.png" Plist="" />
+                        <PrePosition X="0.5000" Y="0.8647" />
+                        <PreSize X="0.2908" Y="0.1495" />
+                        <FileData Type="Normal" Path="public/xiaotanchuan_42.png" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="Image_1_0_0_0_0" ActionTag="-1429968269" Tag="885" IconVisible="False" LeftMargin="310.2021" RightMargin="191.7979" TopMargin="28.7831" BottomMargin="277.2169" LeftEage="20" RightEage="20" TopEage="20" BottomEage="20" Scale9OriginX="20" Scale9OriginY="20" Scale9Width="22" Scale9Height="22" ctype="ImageViewObjectData">
-                        <Size X="62.0000" Y="62.0000" />
-                        <Children>
-                          <AbstractNodeData Name="Text_1" ActionTag="1665606313" Tag="886" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="14.5000" RightMargin="14.5000" TopMargin="14.0000" BottomMargin="14.0000" FontSize="30" LabelText="示" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                            <Size X="33.0000" Y="34.0000" />
-                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                            <Position X="31.0000" Y="31.0000" />
-                            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                            <CColor A="255" R="255" G="255" B="255" />
-                            <PrePosition X="0.5000" Y="0.5000" />
-                            <PreSize X="0.5323" Y="0.5484" />
-                            <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
-                            <OutlineColor A="255" R="255" G="0" B="0" />
-                            <ShadowColor A="255" R="110" G="110" B="110" />
-                          </AbstractNodeData>
-                        </Children>
-                        <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="341.2021" Y="308.2169" />
-                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                        <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.6050" Y="0.8375" />
-                        <PreSize X="0.1099" Y="0.1685" />
-                        <FileData Type="Normal" Path="public/titel_1.png" Plist="" />
-                      </AbstractNodeData>
-                      <AbstractNodeData Name="Text_contents" ActionTag="54853940" Tag="1467" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="36.4995" RightMargin="22.5005" TopMargin="92.1473" BottomMargin="86.8527" IsCustomSize="True" FontSize="32" LabelText="你确定？" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                      <AbstractNodeData Name="Text_contents" ActionTag="54853940" Tag="1467" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="36.4936" RightMargin="22.5064" TopMargin="92.1496" BottomMargin="86.8504" IsCustomSize="True" FontSize="32" LabelText="你确定？" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                         <Size X="505.0000" Y="189.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="288.9995" Y="181.3527" />
+                        <Position X="288.9936" Y="181.3504" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="0" G="0" B="0" />
                         <PrePosition X="0.5124" Y="0.4928" />
@@ -374,10 +222,10 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="Button_ok" ActionTag="-1717128392" Tag="1468" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="192.7971" RightMargin="190.2029" TopMargin="281.5004" BottomMargin="11.4996" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="151" Scale9Height="53" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="Button_ok" ActionTag="-1717128392" Tag="1468" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="192.7972" RightMargin="190.2028" TopMargin="281.5004" BottomMargin="11.4996" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="151" Scale9Height="53" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="181.0000" Y="75.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="283.2971" Y="48.9996" />
+                        <Position X="283.2972" Y="48.9996" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5023" Y="0.1332" />
@@ -389,13 +237,13 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="Button_copy" ActionTag="1183157244" Tag="1469" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="208.5000" RightMargin="208.5000" TopMargin="198.0000" BottomMargin="114.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="117" Scale9Height="34" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                      <AbstractNodeData Name="Button_copy" ActionTag="1183157244" Tag="1469" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="208.5003" RightMargin="208.4997" TopMargin="208.0001" BottomMargin="103.9999" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="117" Scale9Height="34" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                         <Size X="147.0000" Y="56.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="282.0000" Y="142.0000" />
+                        <Position X="282.0003" Y="131.9999" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.5000" Y="0.3859" />
+                        <PrePosition X="0.5000" Y="0.3587" />
                         <PreSize X="0.2606" Y="0.1522" />
                         <TextColor A="255" R="65" G="65" B="70" />
                         <DisabledFileData Type="Normal" Path="common/common_copy.png" Plist="" />
@@ -411,7 +259,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5078" Y="0.4861" />
                     <PreSize X="0.4406" Y="0.5111" />
-                    <FileData Type="Normal" Path="public/img_xiaotanchuang.png" Plist="" />
+                    <FileData Type="Normal" Path="public/bac_xiaotanchuan.png" Plist="" />
                     <SingleColor A="255" R="150" G="200" B="255" />
                     <FirstColor A="255" R="150" G="200" B="255" />
                     <EndColor A="255" R="255" G="255" B="255" />
