@@ -582,11 +582,11 @@ end
 
 --请求亲友圈合伙人
 function NewClubMemberLayer:reqClubPartner(dwPartnerID)
-    UserData.Statistics:req_statisticsManager(self.clubData.dwClubID, self.beganTime, self.endTime)
+    local dwMinWinnerScore = tonumber(self.TextField_winsorce:getString()) or 0
+    UserData.Statistics:req_statisticsManager(self.clubData.dwClubID, self.beganTime, self.endTime, dwMinWinnerScore)
     printInfo(os.date("%y/%m/%d/%H/%M/%S",self.beganTime))
     printInfo(os.date("%y/%m/%d/%H/%M/%S",self.endTime))
     dwPartnerID = dwPartnerID or 0
-    local dwMinWinnerScore = tonumber(self.TextField_winsorce:getString()) or 0
     UserData.Guild:getClubPartner(self.clubData.dwClubID, dwPartnerID, self.beganTime, self.endTime, self.curPartnerIdx, dwMinWinnerScore)
     print('reqClubPartner::',self.clubData.dwClubID, dwPartnerID, self.beganTime, self.endTime, self.curPartnerIdx, dwMinWinnerScore)
 end

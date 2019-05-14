@@ -19,57 +19,49 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_bg" ActionTag="754994186" Tag="245" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="182.5000" RightMargin="182.5000" TopMargin="72.5000" BottomMargin="72.5000" Scale9Enable="True" LeftEage="36" RightEage="36" TopEage="29" BottomEage="29" Scale9OriginX="36" Scale9OriginY="29" Scale9Width="39" Scale9Height="31" ctype="ImageViewObjectData">
-            <Size X="915.0000" Y="575.0000" />
+          <AbstractNodeData Name="Image_bg" ActionTag="754994186" Tag="245" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="123.0000" RightMargin="123.0000" TopMargin="98.5000" BottomMargin="98.5000" Scale9Enable="True" LeftEage="36" RightEage="36" TopEage="29" BottomEage="29" Scale9OriginX="36" Scale9OriginY="29" Scale9Width="962" Scale9Height="465" ctype="ImageViewObjectData">
+            <Size X="1034.0000" Y="523.0000" />
             <Children>
-              <AbstractNodeData Name="Image_4" ActionTag="-2011949920" Tag="248" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="22.5000" RightMargin="22.5000" TopMargin="24.7535" BottomMargin="20.2465" Scale9Enable="True" LeftEage="51" RightEage="51" TopEage="45" BottomEage="45" Scale9OriginX="51" Scale9OriginY="45" Scale9Width="54" Scale9Height="47" ctype="ImageViewObjectData">
-                <Size X="870.0000" Y="530.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="457.5000" Y="285.2465" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.4961" />
-                <PreSize X="0.9508" Y="0.9217" />
-                <FileData Type="Normal" Path="club/club_info1.png" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="Image_2" ActionTag="558862062" Tag="246" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="281.0000" RightMargin="281.0000" TopMargin="-21.4041" BottomMargin="529.4041" LeftEage="116" RightEage="116" TopEage="22" BottomEage="22" Scale9OriginX="116" Scale9OriginY="22" Scale9Width="121" Scale9Height="23" ctype="ImageViewObjectData">
-                <Size X="353.0000" Y="67.0000" />
+              <AbstractNodeData Name="Image_2" ActionTag="558862062" Tag="246" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="367.5000" RightMargin="367.5000" TopMargin="-3.9058" BottomMargin="472.9058" LeftEage="116" RightEage="116" TopEage="22" BottomEage="22" Scale9OriginX="116" Scale9OriginY="22" Scale9Width="67" Scale9Height="10" ctype="ImageViewObjectData">
+                <Size X="299.0000" Y="54.0000" />
                 <Children>
-                  <AbstractNodeData Name="Image_3" ActionTag="1316889103" Tag="247" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="89.0000" RightMargin="89.0000" TopMargin="11.0000" BottomMargin="11.0000" LeftEage="57" RightEage="57" TopEage="14" BottomEage="14" Scale9OriginX="57" Scale9OriginY="14" Scale9Width="61" Scale9Height="17" ctype="ImageViewObjectData">
-                    <Size X="175.0000" Y="45.0000" />
+                  <AbstractNodeData Name="Text_1" ActionTag="-418992538" Tag="1311" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="88.5000" RightMargin="88.5000" TopMargin="9.0000" BottomMargin="9.0000" FontSize="30" LabelText="分享邀请" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="122.0000" Y="36.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="176.5000" Y="33.5000" />
+                    <Position X="149.5000" Y="27.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
-                    <PreSize X="0.4958" Y="0.6716" />
-                    <FileData Type="Normal" Path="club/club_please1.png" Plist="" />
+                    <PreSize X="0.4080" Y="0.6667" />
+                    <FontResource Type="Normal" Path="fonts/fzcy.ttf" Plist="" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="457.5000" Y="562.9041" />
+                <Position X="517.0000" Y="499.9058" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.9790" />
-                <PreSize X="0.3858" Y="0.1165" />
-                <FileData Type="Normal" Path="club/club_info4.png" Plist="" />
+                <PrePosition X="0.5000" Y="0.9558" />
+                <PreSize X="0.2892" Y="0.1033" />
+                <FileData Type="Normal" Path="public/titel_3.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Button_close" ActionTag="-2097606041" Tag="249" IconVisible="False" LeftMargin="852.1412" RightMargin="-43.1412" TopMargin="11.3504" BottomMargin="347.6496" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="76" Scale9Height="194" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                <Size X="106.0000" Y="216.0000" />
+              <AbstractNodeData Name="Button_close" ActionTag="-2097606041" Tag="249" IconVisible="False" LeftMargin="926.0884" RightMargin="-13.0884" TopMargin="-6.4451" BottomMargin="207.4451" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="91" Scale9Height="300" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="121.0000" Y="322.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="905.1412" Y="455.6496" />
+                <Position X="986.5884" Y="368.4451" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.9892" Y="0.7924" />
-                <PreSize X="0.1158" Y="0.3757" />
+                <PrePosition X="0.9541" Y="0.7045" />
+                <PreSize X="0.1170" Y="0.6157" />
                 <TextColor A="255" R="65" G="65" B="70" />
-                <DisabledFileData Type="Normal" Path="club/club_info2.png" Plist="" />
-                <PressedFileData Type="Normal" Path="club/club_info2.png" Plist="" />
-                <NormalFileData Type="Normal" Path="club/club_info2.png" Plist="" />
+                <DisabledFileData Type="Normal" Path="public/btn_close1_s.png" Plist="" />
+                <PressedFileData Type="Normal" Path="public/btn_close1_s.png" Plist="" />
+                <NormalFileData Type="Normal" Path="public/btn_close1_n.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_22_0" ActionTag="-539799124" Tag="365" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="175.2074" RightMargin="389.7926" TopMargin="60.7350" BottomMargin="454.2650" Scale9Enable="True" LeftEage="10" RightEage="10" TopEage="12" BottomEage="12" Scale9OriginX="10" Scale9OriginY="12" Scale9Width="12" Scale9Height="14" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_22_0" ActionTag="-539799124" Tag="365" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="175.2074" RightMargin="508.7926" TopMargin="66.5294" BottomMargin="396.4706" Scale9Enable="True" LeftEage="10" RightEage="10" TopEage="12" BottomEage="12" Scale9OriginX="10" Scale9OriginY="12" Scale9Width="47" Scale9Height="41" ctype="ImageViewObjectData">
                 <Size X="350.0000" Y="60.0000" />
                 <Children>
                   <AbstractNodeData Name="TextField_playID" ActionTag="1520457541" Tag="366" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="10.0000" RightMargin="10.0000" TopMargin="11.4240" BottomMargin="3.5760" TouchEnable="True" FontSize="36" IsCustomSize="True" LabelText="" PlaceHolderText="请输入玩家ID" MaxLengthEnable="True" MaxLengthText="8" ctype="TextFieldObjectData">
@@ -82,13 +74,13 @@
                     <PreSize X="0.9429" Y="0.7500" />
                     <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Button_find" ActionTag="26205285" Tag="367" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="381.9106" RightMargin="-184.9106" TopMargin="-3.5000" BottomMargin="-3.5000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="123" Scale9Height="45" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="Button_find" ActionTag="26205285" Tag="367" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="372.9116" RightMargin="-175.9116" TopMargin="-1.5004" BottomMargin="-5.4996" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="123" Scale9Height="45" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="153.0000" Y="67.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="458.4106" Y="30.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <Position X="449.4116" Y="28.0004" />
+                    <Scale ScaleX="0.9000" ScaleY="0.9000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="1.3097" Y="0.5000" />
+                    <PrePosition X="1.2840" Y="0.4667" />
                     <PreSize X="0.4371" Y="1.1167" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Normal" Path="club/club_36.png" Plist="" />
@@ -99,20 +91,20 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="350.2074" Y="484.2650" />
+                <Position X="350.2074" Y="426.4706" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3827" Y="0.8422" />
-                <PreSize X="0.3825" Y="0.1043" />
-                <FileData Type="Normal" Path="club/club_input.png" Plist="" />
+                <PrePosition X="0.3387" Y="0.8154" />
+                <PreSize X="0.3385" Y="0.1147" />
+                <FileData Type="Normal" Path="public/img_dikuang.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_62" ActionTag="1867315916" Tag="368" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="37.5000" RightMargin="37.5000" TopMargin="135.1583" BottomMargin="29.8417" Scale9Enable="True" LeftEage="17" RightEage="17" TopEage="17" BottomEage="17" Scale9OriginX="17" Scale9OriginY="17" Scale9Width="17" Scale9Height="17" ctype="ImageViewObjectData">
-                <Size X="840.0000" Y="410.0000" />
+              <AbstractNodeData Name="Image_62" ActionTag="1867315916" Tag="368" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="103.9998" RightMargin="100.0002" TopMargin="134.8338" BottomMargin="33.1662" Scale9Enable="True" LeftEage="17" RightEage="17" TopEage="17" BottomEage="17" Scale9OriginX="17" Scale9OriginY="17" Scale9Width="33" Scale9Height="31" ctype="ImageViewObjectData">
+                <Size X="830.0000" Y="355.0000" />
                 <Children>
-                  <AbstractNodeData Name="ScrollView_1" ActionTag="-1707088030" Tag="369" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="Vertical" ctype="ScrollViewObjectData">
-                    <Size X="840.0000" Y="410.0000" />
+                  <AbstractNodeData Name="ScrollView_1" Visible="False" ActionTag="-1707088030" Tag="369" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="Vertical" ctype="ScrollViewObjectData">
+                    <Size X="830.0000" Y="355.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="420.0000" Y="205.0000" />
+                    <Position X="415.0000" Y="177.5000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
@@ -123,10 +115,10 @@
                     <ColorVector ScaleY="1.0000" />
                     <InnerNodeSize Width="850" Height="410" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ListView_1" ActionTag="-771405765" Tag="501" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
-                    <Size X="840.0000" Y="410.0000" />
+                  <AbstractNodeData Name="ListView_1" Visible="False" ActionTag="-771405765" Tag="501" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+                    <Size X="830.0000" Y="355.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="420.0000" Y="205.0000" />
+                    <Position X="415.0000" Y="177.5000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.5000" Y="0.5000" />
@@ -137,13 +129,13 @@
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
                 </Children>
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="457.5000" Y="234.8417" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
+                <Position X="518.9998" Y="388.1662" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.4084" />
-                <PreSize X="0.9180" Y="0.7130" />
-                <FileData Type="Normal" Path="club/club_39.png" Plist="" />
+                <PrePosition X="0.5019" Y="0.7422" />
+                <PreSize X="0.8027" Y="0.6788" />
+                <FileData Type="Normal" Path="public/img_dikuang.png" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -151,10 +143,10 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.5000" />
-            <PreSize X="0.7148" Y="0.7986" />
-            <FileData Type="Normal" Path="club/club_info3.png" Plist="" />
+            <PreSize X="0.8078" Y="0.7264" />
+            <FileData Type="Normal" Path="public/img_zhongtanchuang2.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_item" ActionTag="2105852714" Tag="370" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="346.9418" RightMargin="533.0582" TopMargin="764.1320" BottomMargin="-169.1320" Scale9Enable="True" LeftEage="17" RightEage="17" TopEage="17" BottomEage="17" Scale9OriginX="17" Scale9OriginY="17" Scale9Width="20" Scale9Height="20" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_item" ActionTag="2105852714" Tag="370" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="346.9418" RightMargin="533.0582" TopMargin="764.1320" BottomMargin="-169.1320" Scale9Enable="True" LeftEage="17" RightEage="17" TopEage="17" BottomEage="17" Scale9OriginX="17" Scale9OriginY="17" Scale9Width="33" Scale9Height="31" ctype="ImageViewObjectData">
             <Size X="400.0000" Y="125.0000" />
             <Children>
               <AbstractNodeData Name="Image_head" ActionTag="-905908168" Tag="463" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="11.7400" RightMargin="293.2600" TopMargin="15.0000" BottomMargin="15.0000" LeftEage="36" RightEage="36" TopEage="36" BottomEage="36" Scale9OriginX="36" Scale9OriginY="36" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
@@ -225,7 +217,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.4273" Y="-0.1481" />
             <PreSize X="0.3125" Y="0.1736" />
-            <FileData Type="Normal" Path="club/club_38.png" Plist="" />
+            <FileData Type="Normal" Path="public/img_dikuang.png" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
