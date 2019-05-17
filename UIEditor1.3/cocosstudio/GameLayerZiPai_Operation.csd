@@ -9,7 +9,7 @@
           <AbstractNodeData Name="Panel_root" ActionTag="-2042514018" Tag="133" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="1280.0000" Y="720.0000" />
             <Children>
-              <AbstractNodeData Name="Panel_operation" ActionTag="-886496966" Tag="125" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="540.0000" RightMargin="540.0000" TopMargin="250.3000" BottomMargin="300.7000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="Panel_operation" ActionTag="-886496966" Tag="125" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="540.0000" RightMargin="540.0000" TopMargin="250.3000" BottomMargin="300.7000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="200.0000" Y="169.0000" />
                 <Children>
                   <AbstractNodeData Name="Button_operation" ActionTag="-147045928" ZOrder="1" Tag="126" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="12.0000" RightMargin="12.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="146" Scale9Height="147" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -39,20 +39,8 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_bg" ActionTag="-308483129" Tag="307" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="Panel_bg" ActionTag="-308483129" Tag="307" IconVisible="False" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="1280.0000" Y="720.0000" />
-                <Children>
-                  <AbstractNodeData Name="Image_bg" ActionTag="-129213173" Alpha="229" Tag="305" IconVisible="False" PositionPercentYEnabled="True" BottomMargin="377.0000" LeftEage="422" RightEage="422" TopEage="124" BottomEage="124" Scale9OriginX="422" Scale9OriginY="124" Scale9Width="436" Scale9Height="39" ctype="ImageViewObjectData">
-                    <Size X="1280.0000" Y="343.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
-                    <Position X="640.0000" Y="720.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="0.9000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5000" Y="1.0000" />
-                    <PreSize X="1.0000" Y="0.4764" />
-                    <FileData Type="Normal" Path="zipai/table/zipai_table_dikuang.png" Plist="" />
-                  </AbstractNodeData>
-                </Children>
                 <AnchorPoint />
                 <Position />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -64,7 +52,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ListView_panel" ActionTag="-901556205" Tag="31" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="640.0000" RightMargin="640.0000" TopMargin="-36.0000" BottomMargin="436.0000" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Enable="True" LeftEage="33" RightEage="33" TopEage="72" BottomEage="72" Scale9OriginX="-33" Scale9OriginY="-72" Scale9Width="66" Scale9Height="144" ScrollDirectionType="0" ctype="ListViewObjectData">
+              <AbstractNodeData Name="ListView_panel" ActionTag="-901556205" Tag="31" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="640.0000" RightMargin="640.0000" TopMargin="-20.0000" BottomMargin="420.0000" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Enable="True" LeftEage="33" RightEage="33" TopEage="72" BottomEage="72" Scale9OriginX="33" Scale9OriginY="72" Scale9Width="35" Scale9Height="76" ScrollDirectionType="0" ctype="ListViewObjectData">
                 <Size X="0.0000" Y="320.0000" />
                 <Children>
                   <AbstractNodeData Name="ListView_list" ActionTag="2073617821" Tag="17" IconVisible="False" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Enable="True" LeftEage="40" RightEage="40" TopEage="40" BottomEage="40" Scale9OriginX="-40" Scale9OriginY="-40" Scale9Width="80" Scale9Height="80" ScrollDirectionType="0" ctype="ListViewObjectData">
@@ -152,11 +140,12 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleX="0.5000" />
-                <Position X="640.0000" Y="436.0000" />
+                <Position X="640.0000" Y="420.0000" />
                 <Scale ScaleX="0.7000" ScaleY="0.7000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.6056" />
+                <PrePosition X="0.5000" Y="0.5833" />
                 <PreSize X="0.0000" Y="0.4444" />
+                <FileData Type="Normal" Path="phz/chipai-mianban.png" Plist="" />
                 <SingleColor A="255" R="255" G="0" B="0" />
                 <FirstColor A="255" R="150" G="150" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />

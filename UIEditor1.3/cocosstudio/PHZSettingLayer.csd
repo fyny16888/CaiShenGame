@@ -62,7 +62,7 @@
                   <AbstractNodeData Name="Image_effect" ActionTag="-1176381200" Tag="1516" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="431.4752" RightMargin="-406.4752" TouchEnable="True" LeftEage="12" RightEage="12" TopEage="17" BottomEage="17" Scale9OriginX="12" Scale9OriginY="17" Scale9Width="14" Scale9Height="1" ctype="ImageViewObjectData">
                     <Size X="38.0000" Y="34.0000" />
                     <Children>
-                      <AbstractNodeData Name="Image_eClose" ActionTag="1856957010" Tag="1517" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftEage="12" RightEage="12" TopEage="17" BottomEage="17" Scale9OriginX="12" Scale9OriginY="17" Scale9Width="14" Scale9Height="1" ctype="ImageViewObjectData">
+                      <AbstractNodeData Name="Image_close" ActionTag="1856957010" Tag="1517" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftEage="12" RightEage="12" TopEage="17" BottomEage="17" Scale9OriginX="12" Scale9OriginY="17" Scale9Width="14" Scale9Height="1" ctype="ImageViewObjectData">
                         <Size X="38.0000" Y="34.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="19.0000" Y="17.0000" />
@@ -112,7 +112,7 @@
                   <AbstractNodeData Name="Image_music" ActionTag="-1489955181" Tag="1518" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="431.4752" RightMargin="-406.4752" TopMargin="2.6282" BottomMargin="-2.6282" TouchEnable="True" LeftEage="12" RightEage="12" TopEage="17" BottomEage="17" Scale9OriginX="12" Scale9OriginY="17" Scale9Width="14" Scale9Height="1" ctype="ImageViewObjectData">
                     <Size X="38.0000" Y="34.0000" />
                     <Children>
-                      <AbstractNodeData Name="Image_mClose" ActionTag="-718770249" Tag="1519" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftEage="12" RightEage="12" TopEage="17" BottomEage="17" Scale9OriginX="12" Scale9OriginY="17" Scale9Width="14" Scale9Height="1" ctype="ImageViewObjectData">
+                      <AbstractNodeData Name="Image_close" ActionTag="-718770249" Tag="1519" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftEage="12" RightEage="12" TopEage="17" BottomEage="17" Scale9OriginX="12" Scale9OriginY="17" Scale9Width="14" Scale9Height="1" ctype="ImageViewObjectData">
                         <Size X="38.0000" Y="34.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="19.0000" Y="17.0000" />
@@ -253,62 +253,13 @@
               <AbstractNodeData Name="Text_4_0" ActionTag="-1524778665" Tag="1551" IconVisible="False" LeftMargin="14.2531" RightMargin="449.7469" TopMargin="346.5841" BottomMargin="339.4159" FontSize="30" LabelText="【速度】" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="110.0000" Y="34.0000" />
                 <Children>
-                  <AbstractNodeData Name="Panel_speed1" ActionTag="247674486" Tag="1564" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="336.8940" RightMargin="-306.8940" TopMargin="47.4288" BottomMargin="-53.4288" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-                    <Size X="80.0000" Y="40.0000" />
-                    <Children>
-                      <AbstractNodeData Name="Image_speed1" ActionTag="1219322754" Tag="1565" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-0.1160" RightMargin="51.1160" TopMargin="5.5000" BottomMargin="5.5000" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="11" Scale9Height="11" ctype="ImageViewObjectData">
-                        <Size X="29.0000" Y="29.0000" />
-                        <Children>
-                          <AbstractNodeData Name="Image_speedLight1" ActionTag="1875281164" Tag="1566" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="4.0000" RightMargin="4.0000" TopMargin="2.9995" BottomMargin="5.0005" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="3" Scale9Height="3" ctype="ImageViewObjectData">
-                            <Size X="21.0000" Y="21.0000" />
-                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                            <Position X="14.5000" Y="15.5005" />
-                            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                            <CColor A="255" R="255" G="255" B="255" />
-                            <PrePosition X="0.5000" Y="0.5345" />
-                            <PreSize X="0.7241" Y="0.7241" />
-                            <FileData Type="Normal" Path="setting_new/icon_xuan.png" Plist="" />
-                          </AbstractNodeData>
-                        </Children>
-                        <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="14.3840" Y="20.0000" />
-                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                        <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.1798" Y="0.5000" />
-                        <PreSize X="0.3625" Y="0.7250" />
-                        <FileData Type="Normal" Path="setting_new/icon_xuandi.png" Plist="" />
-                      </AbstractNodeData>
-                      <AbstractNodeData Name="Text_4_0" ActionTag="898800623" Tag="1567" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="37.2565" RightMargin="10.7435" TopMargin="3.0000" BottomMargin="3.0000" FontSize="30" LabelText="慢" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                        <Size X="32.0000" Y="34.0000" />
-                        <AnchorPoint ScaleX="0.6081" ScaleY="0.3820" />
-                        <Position X="56.7157" Y="15.9880" />
-                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                        <CColor A="255" R="80" G="106" B="123" />
-                        <PrePosition X="0.7089" Y="0.3997" />
-                        <PreSize X="0.4000" Y="0.8500" />
-                        <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
-                        <OutlineColor A="255" R="255" G="0" B="0" />
-                        <ShadowColor A="255" R="110" G="110" B="110" />
-                      </AbstractNodeData>
-                    </Children>
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="376.8940" Y="-33.4288" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="3.4263" Y="-0.9832" />
-                    <PreSize X="0.7273" Y="1.1765" />
-                    <SingleColor A="255" R="150" G="200" B="255" />
-                    <FirstColor A="255" R="150" G="200" B="255" />
-                    <EndColor A="255" R="255" G="255" B="255" />
-                    <ColorVector ScaleY="1.0000" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="Panel_speed2" ActionTag="1427388524" Tag="1552" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="118.2719" RightMargin="-113.2719" TopMargin="-3.9146" BottomMargin="-2.0854" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="Panel_speed1" ActionTag="1427388524" Tag="1552" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="118.2719" RightMargin="-113.2719" TopMargin="-3.9146" BottomMargin="-2.0854" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="105.0000" Y="40.0000" />
                     <Children>
-                      <AbstractNodeData Name="Image_speed2" ActionTag="-1436494118" Tag="1553" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="4.3790" RightMargin="71.6210" TopMargin="5.5000" BottomMargin="5.5000" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="11" Scale9Height="11" ctype="ImageViewObjectData">
+                      <AbstractNodeData Name="Image_speed1" ActionTag="-1436494118" Tag="1553" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="4.3790" RightMargin="71.6210" TopMargin="5.5000" BottomMargin="5.5000" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="11" Scale9Height="11" ctype="ImageViewObjectData">
                         <Size X="29.0000" Y="29.0000" />
                         <Children>
-                          <AbstractNodeData Name="Image_speedLight2" ActionTag="-1811091511" Tag="1554" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="4.0000" RightMargin="4.0000" TopMargin="2.9995" BottomMargin="5.0005" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="3" Scale9Height="3" ctype="ImageViewObjectData">
+                          <AbstractNodeData Name="Image_speedLight1" ActionTag="-1811091511" Tag="1554" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="4.0000" RightMargin="4.0000" TopMargin="2.9995" BottomMargin="5.0005" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="3" Scale9Height="3" ctype="ImageViewObjectData">
                             <Size X="21.0000" Y="21.0000" />
                             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                             <Position X="14.5000" Y="15.5005" />
@@ -351,13 +302,13 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Panel_speed3" ActionTag="1222661515" Tag="1556" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="337.8931" RightMargin="-307.8931" TopMargin="-3.9146" BottomMargin="-2.0854" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="Panel_speed2" ActionTag="1222661515" Tag="1556" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="337.8931" RightMargin="-307.8931" TopMargin="-3.9146" BottomMargin="-2.0854" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="80.0000" Y="40.0000" />
                     <Children>
-                      <AbstractNodeData Name="Image_speed3" ActionTag="896256709" Tag="1557" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-0.1160" RightMargin="51.1160" TopMargin="5.5000" BottomMargin="5.5000" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="11" Scale9Height="11" ctype="ImageViewObjectData">
+                      <AbstractNodeData Name="Image_speed2" ActionTag="896256709" Tag="1557" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-0.1160" RightMargin="51.1160" TopMargin="5.5000" BottomMargin="5.5000" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="11" Scale9Height="11" ctype="ImageViewObjectData">
                         <Size X="29.0000" Y="29.0000" />
                         <Children>
-                          <AbstractNodeData Name="Image_speedLight3" ActionTag="-648337821" Tag="1558" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="4.0000" RightMargin="4.0000" TopMargin="2.9995" BottomMargin="5.0005" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="3" Scale9Height="3" ctype="ImageViewObjectData">
+                          <AbstractNodeData Name="Image_speedLight2" ActionTag="-648337821" Tag="1558" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="4.0000" RightMargin="4.0000" TopMargin="2.9995" BottomMargin="5.0005" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="3" Scale9Height="3" ctype="ImageViewObjectData">
                             <Size X="21.0000" Y="21.0000" />
                             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                             <Position X="14.5000" Y="15.5005" />
@@ -400,13 +351,13 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Panel_speed4" ActionTag="396698205" Tag="1560" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="116.4459" RightMargin="-111.4459" TopMargin="47.4288" BottomMargin="-53.4288" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="Panel_speed3" ActionTag="396698205" Tag="1560" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="116.4459" RightMargin="-111.4459" TopMargin="47.4288" BottomMargin="-53.4288" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="105.0000" Y="40.0000" />
                     <Children>
-                      <AbstractNodeData Name="Image_speed4" ActionTag="38928321" Tag="1561" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="4.3790" RightMargin="71.6210" TopMargin="5.5000" BottomMargin="5.5000" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="11" Scale9Height="11" ctype="ImageViewObjectData">
+                      <AbstractNodeData Name="Image_speed3" ActionTag="38928321" Tag="1561" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="4.3790" RightMargin="71.6210" TopMargin="5.5000" BottomMargin="5.5000" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="11" Scale9Height="11" ctype="ImageViewObjectData">
                         <Size X="29.0000" Y="29.0000" />
                         <Children>
-                          <AbstractNodeData Name="Image_speedLight4" ActionTag="313070517" Tag="1562" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="4.0000" RightMargin="4.0000" TopMargin="2.9995" BottomMargin="5.0005" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="3" Scale9Height="3" ctype="ImageViewObjectData">
+                          <AbstractNodeData Name="Image_speedLight3" ActionTag="313070517" Tag="1562" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="4.0000" RightMargin="4.0000" TopMargin="2.9995" BottomMargin="5.0005" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="3" Scale9Height="3" ctype="ImageViewObjectData">
                             <Size X="21.0000" Y="21.0000" />
                             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                             <Position X="14.5000" Y="15.5005" />
@@ -449,6 +400,55 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_speed4" ActionTag="247674486" Tag="1564" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="336.8940" RightMargin="-306.8940" TopMargin="47.4288" BottomMargin="-53.4288" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="80.0000" Y="40.0000" />
+                    <Children>
+                      <AbstractNodeData Name="Image_speed4" ActionTag="1219322754" Tag="1565" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-0.1160" RightMargin="51.1160" TopMargin="5.5000" BottomMargin="5.5000" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="11" Scale9Height="11" ctype="ImageViewObjectData">
+                        <Size X="29.0000" Y="29.0000" />
+                        <Children>
+                          <AbstractNodeData Name="Image_speedLight4" ActionTag="1875281164" Tag="1566" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="4.0000" RightMargin="4.0000" TopMargin="2.9995" BottomMargin="5.0005" LeftEage="9" RightEage="9" TopEage="9" BottomEage="9" Scale9OriginX="9" Scale9OriginY="9" Scale9Width="3" Scale9Height="3" ctype="ImageViewObjectData">
+                            <Size X="21.0000" Y="21.0000" />
+                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                            <Position X="14.5000" Y="15.5005" />
+                            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                            <CColor A="255" R="255" G="255" B="255" />
+                            <PrePosition X="0.5000" Y="0.5345" />
+                            <PreSize X="0.7241" Y="0.7241" />
+                            <FileData Type="Normal" Path="setting_new/icon_xuan.png" Plist="" />
+                          </AbstractNodeData>
+                        </Children>
+                        <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                        <Position X="14.3840" Y="20.0000" />
+                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                        <CColor A="255" R="255" G="255" B="255" />
+                        <PrePosition X="0.1798" Y="0.5000" />
+                        <PreSize X="0.3625" Y="0.7250" />
+                        <FileData Type="Normal" Path="setting_new/icon_xuandi.png" Plist="" />
+                      </AbstractNodeData>
+                      <AbstractNodeData Name="Text_4_0" ActionTag="898800623" Tag="1567" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="37.2565" RightMargin="10.7435" TopMargin="3.0000" BottomMargin="3.0000" FontSize="30" LabelText="慢" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                        <Size X="32.0000" Y="34.0000" />
+                        <AnchorPoint ScaleX="0.6081" ScaleY="0.3820" />
+                        <Position X="56.7157" Y="15.9880" />
+                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                        <CColor A="255" R="80" G="106" B="123" />
+                        <PrePosition X="0.7089" Y="0.3997" />
+                        <PreSize X="0.4000" Y="0.8500" />
+                        <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
+                        <OutlineColor A="255" R="255" G="0" B="0" />
+                        <ShadowColor A="255" R="110" G="110" B="110" />
+                      </AbstractNodeData>
+                    </Children>
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="376.8940" Y="-33.4288" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="3.4263" Y="-0.9832" />
+                    <PreSize X="0.7273" Y="1.1765" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="69.2531" Y="356.4159" />
@@ -473,7 +473,7 @@
               <AbstractNodeData Name="Panel_bg1" ActionTag="-701502767" Tag="1568" IconVisible="False" LeftMargin="22.7130" RightMargin="401.2870" TopMargin="485.9071" BottomMargin="183.0929" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="150.0000" Y="51.0000" />
                 <Children>
-                  <AbstractNodeData Name="Image_bg_1" ActionTag="1652925058" Tag="1514" IconVisible="False" PositionPercentYEnabled="True" RightMargin="59.0000" TopMargin="-1.3158" BottomMargin="1.3158" TouchEnable="True" LeftEage="30" RightEage="30" TopEage="8" BottomEage="8" Scale9OriginX="30" Scale9OriginY="8" Scale9Width="31" Scale9Height="35" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="Image_bg_1" ActionTag="1652925058" Tag="1514" IconVisible="False" PositionPercentYEnabled="True" RightMargin="59.0000" TopMargin="-1.3158" BottomMargin="1.3158" LeftEage="30" RightEage="30" TopEage="8" BottomEage="8" Scale9OriginX="30" Scale9OriginY="8" Scale9Width="31" Scale9Height="35" ctype="ImageViewObjectData">
                     <Size X="91.0000" Y="51.0000" />
                     <AnchorPoint ScaleY="0.5000" />
                     <Position Y="26.8158" />
@@ -520,7 +520,7 @@
               <AbstractNodeData Name="Panel_bg2" ActionTag="332342822" Tag="1571" IconVisible="False" LeftMargin="210.9348" RightMargin="213.0652" TopMargin="485.9071" BottomMargin="183.0929" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="150.0000" Y="51.0000" />
                 <Children>
-                  <AbstractNodeData Name="Image_bg_1" ActionTag="-110846019" Tag="1572" IconVisible="False" PositionPercentYEnabled="True" RightMargin="59.0000" TouchEnable="True" LeftEage="30" RightEage="30" TopEage="8" BottomEage="8" Scale9OriginX="30" Scale9OriginY="8" Scale9Width="31" Scale9Height="35" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="Image_bg_1" ActionTag="-110846019" Tag="1572" IconVisible="False" PositionPercentYEnabled="True" RightMargin="59.0000" LeftEage="30" RightEage="30" TopEage="8" BottomEage="8" Scale9OriginX="30" Scale9OriginY="8" Scale9Width="31" Scale9Height="35" ctype="ImageViewObjectData">
                     <Size X="91.0000" Y="51.0000" />
                     <AnchorPoint ScaleY="0.5000" />
                     <Position Y="25.5000" />
@@ -567,7 +567,7 @@
               <AbstractNodeData Name="Panel_bg3" ActionTag="1740125002" Tag="1575" IconVisible="False" LeftMargin="399.1567" RightMargin="24.8433" TopMargin="485.9071" BottomMargin="183.0929" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="150.0000" Y="51.0000" />
                 <Children>
-                  <AbstractNodeData Name="Image_bg_1" ActionTag="-130386730" Tag="1576" IconVisible="False" PositionPercentYEnabled="True" RightMargin="59.0000" TouchEnable="True" LeftEage="30" RightEage="30" TopEage="8" BottomEage="8" Scale9OriginX="30" Scale9OriginY="8" Scale9Width="31" Scale9Height="35" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="Image_bg_1" ActionTag="-130386730" Tag="1576" IconVisible="False" PositionPercentYEnabled="True" RightMargin="59.0000" LeftEage="30" RightEage="30" TopEage="8" BottomEage="8" Scale9OriginX="30" Scale9OriginY="8" Scale9Width="31" Scale9Height="35" ctype="ImageViewObjectData">
                     <Size X="91.0000" Y="51.0000" />
                     <AnchorPoint ScaleY="0.5000" />
                     <Position Y="25.5000" />

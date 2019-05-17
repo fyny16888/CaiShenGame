@@ -109,7 +109,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_info" Visible="False" ActionTag="-1301533035" Tag="252" IconVisible="False" LeftMargin="348.3846" RightMargin="148.6154" TopMargin="64.6913" BottomMargin="39.3087" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="Panel_info" Visible="False" ActionTag="-1301533035" Tag="252" IconVisible="False" LeftMargin="348.3846" RightMargin="148.6155" TopMargin="64.6913" BottomMargin="39.3087" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="775.0000" Y="550.0000" />
                 <Children>
                   <AbstractNodeData Name="Image_head" ActionTag="-1622752557" Tag="908" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-8.5475" RightMargin="665.5475" TopMargin="28.4500" BottomMargin="403.5500" LeftEage="36" RightEage="36" TopEage="36" BottomEage="36" Scale9OriginX="36" Scale9OriginY="36" Scale9Width="28" Scale9Height="28" ctype="ImageViewObjectData">
@@ -440,7 +440,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_playway" ActionTag="-399474717" Tag="257" IconVisible="False" LeftMargin="348.3800" RightMargin="148.6200" TopMargin="64.8700" BottomMargin="39.1300" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="Panel_playway" Visible="False" ActionTag="-399474717" Tag="257" IconVisible="False" LeftMargin="348.3800" RightMargin="148.6200" TopMargin="64.8700" BottomMargin="39.1300" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="775.0000" Y="550.0000" />
                 <Children>
                   <AbstractNodeData Name="Image_frame" ActionTag="904327456" Tag="278" IconVisible="False" LeftMargin="-44.7260" RightMargin="-40.2740" TopMargin="4.2930" BottomMargin="5.7070" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="21" BottomEage="19" Scale9OriginX="12" Scale9OriginY="21" Scale9Width="43" Scale9Height="25" ctype="ImageViewObjectData">
@@ -1632,26 +1632,26 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_record" Visible="False" ActionTag="1105235074" Tag="355" IconVisible="False" LeftMargin="348.3800" RightMargin="148.6200" TopMargin="64.8700" BottomMargin="39.1300" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="Panel_record" ActionTag="1105235074" Tag="355" IconVisible="False" LeftMargin="348.3800" RightMargin="148.6200" TopMargin="64.8700" BottomMargin="39.1300" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="775.0000" Y="550.0000" />
                 <Children>
                   <AbstractNodeData Name="Image_frame" ActionTag="-1283127533" Tag="356" IconVisible="False" LeftMargin="-44.7300" RightMargin="-40.2700" TopMargin="4.2900" BottomMargin="5.7100" Scale9Enable="True" LeftEage="12" RightEage="12" TopEage="21" BottomEage="19" Scale9OriginX="12" Scale9OriginY="21" Scale9Width="43" Scale9Height="25" ctype="ImageViewObjectData">
                     <Size X="860.0000" Y="540.0000" />
                     <Children>
-                      <AbstractNodeData Name="ListView_record" ActionTag="-1497452299" Tag="357" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="10.0000" BottomMargin="10.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" ItemMargin="2" DirectionType="Vertical" ctype="ListViewObjectData">
-                        <Size X="830.0000" Y="520.0000" />
+                      <AbstractNodeData Name="ListView_record" ActionTag="-1497452299" Tag="357" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="10.0000" RightMargin="10.0000" TopMargin="10.0000" BottomMargin="10.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" ItemMargin="2" DirectionType="Vertical" ctype="ListViewObjectData">
+                        <Size X="840.0000" Y="520.0000" />
                         <Children>
-                          <AbstractNodeData Name="Panel_item" ActionTag="-2115010441" Tag="297" IconVisible="False" BottomMargin="470.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="126" ColorAngle="90.0000" Scale9Enable="True" LeftEage="33" RightEage="30" Scale9OriginX="33" Scale9Width="746" Scale9Height="1" ctype="PanelObjectData">
-                            <Size X="830.0000" Y="50.0000" />
+                          <AbstractNodeData Name="Panel_item" ActionTag="-2115010441" Tag="297" IconVisible="False" BottomMargin="470.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="126" ColorAngle="90.0000" Scale9Enable="True" LeftEage="33" RightEage="30" Scale9OriginX="33" Scale9Width="4" Scale9Height="65" ctype="PanelObjectData">
+                            <Size X="840.0000" Y="50.0000" />
                             <Children>
-                              <AbstractNodeData Name="Text_recordDes" ActionTag="1064487132" ZOrder="1" Tag="400" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="5.0000" RightMargin="5.0000" TopMargin="4.0000" BottomMargin="4.0000" IsCustomSize="True" FontSize="20" LabelText="此条记录信息非法" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                              <AbstractNodeData Name="Text_recordDes" ActionTag="1064487132" ZOrder="1" Tag="400" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="10.0000" RightMargin="10.0000" TopMargin="4.0000" BottomMargin="4.0000" IsCustomSize="True" FontSize="20" LabelText="此条记录信息非法" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                                 <Size X="820.0000" Y="42.0000" />
                                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                                <Position X="415.0000" Y="25.0000" />
+                                <Position X="420.0000" Y="25.0000" />
                                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                                 <CColor A="255" R="120" G="6" B="6" />
                                 <PrePosition X="0.5000" Y="0.5000" />
-                                <PreSize X="0.9880" Y="0.8400" />
+                                <PreSize X="0.9762" Y="0.8400" />
                                 <OutlineColor A="255" R="255" G="0" B="0" />
                                 <ShadowColor A="255" R="110" G="110" B="110" />
                               </AbstractNodeData>
@@ -1662,7 +1662,7 @@
                             <CColor A="255" R="255" G="255" B="255" />
                             <PrePosition Y="0.9038" />
                             <PreSize X="1.0000" Y="0.0962" />
-                            <FileData Type="Normal" Path="public/img_hengxian.png" Plist="" />
+                            <FileData Type="Normal" Path="public/img_dikuang.png" Plist="" />
                             <SingleColor A="255" R="0" G="0" B="0" />
                             <FirstColor A="255" R="150" G="200" B="255" />
                             <EndColor A="255" R="255" G="255" B="255" />
@@ -1674,7 +1674,7 @@
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.5000" Y="0.5000" />
-                        <PreSize X="0.9651" Y="0.9630" />
+                        <PreSize X="0.9767" Y="0.9630" />
                         <SingleColor A="255" R="150" G="150" B="255" />
                         <FirstColor A="255" R="150" G="150" B="255" />
                         <EndColor A="255" R="255" G="255" B="255" />

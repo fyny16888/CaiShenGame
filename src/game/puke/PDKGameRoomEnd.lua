@@ -7,7 +7,7 @@ local UserData = require("app.user.UserData")
 local Common = require("common.Common")
 local EventMgr = require("common.EventMgr")
 local EventType = require("common.EventType")
-local GameCommon = require("game.hyphz.GameCommon")
+local GameCommon = require("game.puke.GameCommon")
 local Base64 = require("common.Base64")
 
 local endDes = {

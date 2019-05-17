@@ -1714,7 +1714,7 @@ function TableLayer:initUI()
         uiPanel_night:setVisible(true)
     end
     Common:addTouchEventListener(ccui.Helper:seekWidgetByName(self.root,"Button_settings"),function() 
-        self:addChild(require("app.MyApp"):create():createGame("game.paohuzi.PHZSettingLayer"))
+        self:addChild(require("app.MyApp"):create(self.root):createGame("game.paohuzi.PHZSettingLayer"))
     end)
     local uiButton_expression = ccui.Helper:seekWidgetByName(self.root,"Button_expression")
     uiButton_expression:setPressedActionEnabled(true)
