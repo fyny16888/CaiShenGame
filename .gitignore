@@ -198,18 +198,14 @@ frameworks/runtime-src/proj.android/libs/armeabi/*
 /simulator/win32/01--loading2.jpg
 /simulator/win32/01--loading3.jpg
 /simulator/win32/01--loading4.jpg
-/simulator/platform-luaproj/custom_function_config.txt
-
-
-
-/UIEditor/
+/simulator/platform-luaproj/custom_function_config.tx
 /.settings/
 /frameworks/
 /huyoo/
 /sql/
-/UIEditor/
 /cloudvoice_audio/
 /runtime/win32/CaiShenGame.pdb
 /arts/
+/UIEditor/
 
 
