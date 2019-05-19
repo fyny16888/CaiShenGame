@@ -1218,6 +1218,15 @@ function NewClubInfoLayer:initPlayWayPendant()
         end
     end
 
+    local fix = 0
+    if len >= 6 then
+        self.Button_addway:setVisible(false)
+        fix = 97
+    else
+        self.Button_addway:setVisible(true)
+        fix = 0
+    end
+
     self.Panel_wayTop:removeAllChildren()
     local index = 0
     for i,v in ipairs(self.clubData.wKindID) do
@@ -1227,7 +1236,7 @@ function NewClubInfoLayer:initPlayWayPendant()
             local idx = index
             local item = self.Button_selectway:clone()
             self.Panel_wayTop:addChild(item)
-            local x = 1133 - (len - index) * 97
+            local x = 1133 - (len - index) * 97 + fix
             item:setPosition(x, self.Panel_wayTop:getContentSize().height)
             local Text_wayname = ccui.Helper:seekWidgetByName(item, "Text_wayname")
             local Text_idxEx = ccui.Helper:seekWidgetByName(item, "Text_idxEx")
