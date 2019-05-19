@@ -121,7 +121,7 @@ function HallLayer:onCreate(parames)
     --邀请有礼
     local uiButton_invite = ccui.Helper:seekWidgetByName(self.root,"Button_invite")
     if  uiButton_invite ~= nil then
-        uiButton_invite:setVisible(false)
+        --uiButton_invite:setVisible(false)
     end 
     --代开
     local uiButton_proxy  = ccui.Helper:seekWidgetByName(self.root,"Button_proxy")
