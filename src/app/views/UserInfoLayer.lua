@@ -31,6 +31,14 @@ function UserInfoLayer:onCreate(parames)
     Common:addTouchEventListener(ccui.Helper:seekWidgetByName(self.root,"Button_return"),function() 
         Common:playExitAnim(Image_bg, callback)
     end)
+
+    local Button_close = ccui.Helper:seekWidgetByName(self.root,"Button_close")
+    Button_close:addTouchEventListener(function(sender,event) 
+        if event == ccui.TouchEventType.ended then    
+            Common:palyButton()
+            self:removeFromParent()    
+        end
+    end)             
 end
 
 --刷新个人信息

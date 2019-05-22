@@ -32,10 +32,8 @@ function ReplayInput:onCreate( params )
         local btn = self:seekWidgetByNameEx(Panel_btnNum,'Button_num' ..i)
         self:addButtonEventListener(btn,handler(self,self.clickNumbBtn))
     end
-    local ListView_number = self:seekWidgetByNameEx(self.csb,'ListView_number')
     for i=1,6 do
-        local imageNum = self:seekWidgetByNameEx(ListView_number,'Image_number' .. i)
-        local numb = imageNum:getChildByName('AtlasLabel_number' .. i)
+        local numb = self:seekWidgetByNameEx(self, 'Text_number' .. i)
         self.inputText[i] = numb
     end
     self.inputValue = {}

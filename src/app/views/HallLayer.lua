@@ -306,7 +306,7 @@ function HallLayer:onCreate(parames)
     local uiButton_setting = ccui.Helper:seekWidgetByName(self.root,"Button_setting")
     if uiButton_setting ~= nil then
         Common:addTouchEventListener(uiButton_setting,function()             
-            require("common.SceneMgr"):switchOperation(require("app.MyApp"):create():createView("SettingsLayer"))
+            require("common.SceneMgr"):switchOperation(require("app.MyApp"):create(1):createView("SettingsLayer"))
         end)
     end    
     --游戏规则
@@ -469,26 +469,12 @@ function HallLayer:onCreate(parames)
     local uiButton_doshare = ccui.Helper:seekWidgetByName(self.root,"Button_doshare")
     if uiButton_doshare ~= nil then                
         Common:addTouchEventListener(uiButton_doshare,function() 
-            require("app.MyApp"):create(self.data):createView("DailyShareLayer")    
-        end) 
-        if CHANNEL_ID ~= 20 and  CHANNEL_ID ~= 21 then 
-            uiButton_doshare:setScale(1.3)         
-            if CHANNEL_ID == 10 or  CHANNEL_ID == 11 then
-               uiButton_doshare:setScale(1.2)
-            end 
-            ccs.ArmatureDataManager:getInstance():addArmatureFileInfo("common/fenxiang-donghua/fenxiang-donghua.ExportJson")
-            local armature=ccs.Armature:create("fenxiang-donghua")
-            armature:getAnimation():playWithIndex(0)
-            uiButton_doshare:addChild(armature) 
-            armature:setPosition(armature:getParent():getContentSize().width/2,armature:getParent():getContentSize().height/2)
-            self.sCircle = cc.Sprite:create("Email/Email_12.png")
-            self.sCircle:setAnchorPoint(cc.p(0.5,0.5))
-            self.sCircle:setPosition(25,25)        
-            armature:addChild(self.sCircle,100)   
-        end  
+            local data = clone(UserData.Share.tableShareParameter[3])
+            data.szShareImg = string.format(data.szShareImg,UserData.User.userID)
+            require("app.MyApp"):create(data):createView("ShareLayer")   
+            print('>>>>>>>>>>>>>分享>>>>>>>>>>>>>>>>>>>')  
+        end)
     end 
-
-
 
     self:updateUserInfo()
 end
