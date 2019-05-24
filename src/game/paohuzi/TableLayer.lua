@@ -1888,7 +1888,7 @@ function TableLayer:initUI()
     local uiButton_position = ccui.Helper:seekWidgetByName(self.root,"Button_position")   -- 定位
     Common:addTouchEventListener(uiButton_position,function() 
         -- require("common.PositionLayer"):create(GameCommon.tableConfig.wKindID)
-        require("game.puke.PositionLayer"):create(GameCommon.tableConfig.wKindID)
+        require("game.paohuzi.PositionLayer"):create(GameCommon.tableConfig.wKindID)
     end)
     local uiPanel_playerInfoBg = ccui.Helper:seekWidgetByName(self.root,"Panel_playerInfoBg")
     if GameCommon.tableConfig.wCurrentNumber == 0 and  GameCommon.tableConfig.nTableType > TableType_GoldRoom then

@@ -74,13 +74,13 @@ function GameEndLayer:onCreate(pBuffer)
     end
     uiButton_continue:addTouchEventListener(onEventContinue)
     local visibleSize = cc.Director:getInstance():getVisibleSize()
-    ccs.ArmatureDataManager:getInstance():addArmatureFileInfo("game/wuguidonghua/wuguidonghua.ExportJson")
-    local armature2=ccs.Armature:create("wuguidonghua")
-    armature2:getAnimation():playWithIndex(0)
-    local uiImage_bjkuang = ccui.Helper:seekWidgetByName(self.root,"Image_bjkuang")
-    uiImage_bjkuang:addChild(armature2,100)
-    armature2:setPosition(0,armature2:getParent():getContentSize().height)
-    armature2:runAction(cc.MoveTo:create(20,cc.p(1280,armature2:getPositionY())))
+    -- ccs.ArmatureDataManager:getInstance():addArmatureFileInfo("game/wuguidonghua/wuguidonghua.ExportJson")
+    -- local armature2=ccs.Armature:create("wuguidonghua")
+    -- armature2:getAnimation():playWithIndex(0)
+    -- local uiImage_bjkuang = ccui.Helper:seekWidgetByName(self.root,"Image_bjkuang")
+    -- uiImage_bjkuang:addChild(armature2,100)
+    -- armature2:setPosition(0,armature2:getParent():getContentSize().height)
+    -- armature2:runAction(cc.MoveTo:create(20,cc.p(1280,armature2:getPositionY())))
     
     --显示桌面、显示结算
     local uiPanel_look = ccui.Helper:seekWidgetByName(self.root,"Panel_look")
@@ -103,9 +103,9 @@ function GameEndLayer:onCreate(pBuffer)
     local uiImage_result = ccui.Helper:seekWidgetByName(self.root,"Image_biaoti") 
     local textureName = nil
     if pBuffer.wWinner[GameCommon:getRoleChairID()+1] == true then
-        textureName = "common/common_end1.png"   
+        textureName = "mjtable/duihuan_10.png"   
     else
-        textureName = "common/common_end2.png"       
+        textureName = "mjtable/duihuan_16.png"       
     end
     local texture = cc.Director:getInstance():getTextureCache():addImage(textureName)
     uiImage_result:loadTexture(textureName)

@@ -262,7 +262,9 @@ function GameLayer:readBuffer(luaFunc, mainCmdID, subCmdID)
             GameCommon.tableConfig.wTableNumber = luaFunc:readRecvWORD()       --房间局数
             GameCommon.tableConfig.wCurrentNumber = luaFunc:readRecvWORD()    --当前局数
             local uiText_title = ccui.Helper:seekWidgetByName(self.root,"Text_title")
-            uiText_title:setString(string.format("%s 房间号:%d 局数:%d/%d",StaticData.Games[GameCommon.tableConfig.wKindID].name,GameCommon.tableConfig.wTbaleID,GameCommon.tableConfig.wCurrentNumber,GameCommon.tableConfig.wTableNumber))
+            uiText_title:setString(GameCommon.tableConfig.wTbaleID)
+            local Text_retainJuShu = ccui.Helper:seekWidgetByName(self.root,"Text_retainJuShu")
+            Text_retainJuShu:setString(string.format('剩余%d局',GameCommon.tableConfig.wTableNumber-GameCommon.tableConfig.wCurrentNumber))
             return true
             
         elseif subCmdID == NetMsgId.SUB_GR_DISMISS_TABLE_SUCCESS then
@@ -338,7 +340,7 @@ function GameLayer:readBuffer(luaFunc, mainCmdID, subCmdID)
             _tagMsg.pBuffer.dwPlayTimeCount = luaFunc:readRecvDWORD()  
             _tagMsg.pBuffer.dwPlayAddr = luaFunc:readRecvDWORD() 
             _tagMsg.pBuffer.dwShamUserID = luaFunc:readRecvDWORD()
-            self.tableLayer:showPlayerInfo(_tagMsg.pBuffer.dwUserID,_tagMsg.pBuffer.dwShamUserID)
+            self.tableLayer:showPlayerInfo(_tagMsg.pBuffer)
             return true
             
         elseif subCmdID == NetMsgId.SUB_GR_SEND_CHAT then
@@ -1154,6 +1156,7 @@ function GameLayer:updatePlayerInfo()
             uiText_score:setString(tostring(dwGold))        
         end
     end
+    self.tableLayer:refreshTableInfo()
 end
 
 function GameLayer:updatePlayerlScore()

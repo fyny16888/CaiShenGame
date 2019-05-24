@@ -33,7 +33,7 @@
                     <PreSize X="0.6859" Y="0.5208" />
                     <FileData Type="Normal" Path="login/login_5.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Image_bg" ActionTag="483347845" Tag="51" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-1.6790" RightMargin="1.6790" TopMargin="672.0000" LeftEage="289" RightEage="289" TopEage="15" BottomEage="15" Scale9OriginX="289" Scale9OriginY="15" Scale9Width="702" Scale9Height="18" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="Image_bg" ActionTag="483347845" Tag="51" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-1.6639" RightMargin="1.6639" TopMargin="672.0000" LeftEage="289" RightEage="289" TopEage="15" BottomEage="15" Scale9OriginX="289" Scale9OriginY="15" Scale9Width="702" Scale9Height="18" ctype="ImageViewObjectData">
                     <Size X="1280.0000" Y="48.0000" />
                     <AnchorPoint ScaleX="0.5013" />
                     <Position X="640.0000" />
@@ -51,6 +51,7 @@
                     <CColor A="255" R="241" G="218" B="188" />
                     <PrePosition X="0.5000" Y="0.0400" />
                     <PreSize X="0.0000" Y="0.0000" />
+                    <FontResource Type="Normal" Path="fonts/lanting.TTF" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
