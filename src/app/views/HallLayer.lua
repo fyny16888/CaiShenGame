@@ -66,9 +66,9 @@ function HallLayer:onCreate(parames)
                 --         self:addChild(require("app.MyApp"):create():createView("GuilLayer"))   
                 --     end
                 -- end
-                if StaticData.Hide[CHANNEL_ID].btn12 == 1 and Common:isToday(cc.UserDefault:getInstance():getIntegerForKey(string.format(Default.UserDefault_Sign,UserData.User.userID),0)) == false then
-                    self:addChild(require("app.MyApp"):create(1000):createView("WelfareLayer"))  
-                end 
+                -- if StaticData.Hide[CHANNEL_ID].btn12 == 1 and Common:isToday(cc.UserDefault:getInstance():getIntegerForKey(string.format(Default.UserDefault_Sign,UserData.User.userID),0)) == false then
+                --     self:addChild(require("app.MyApp"):create(1000):createView("WelfareLayer"))  
+                -- end 
                 if CHANNEL_ID == 10 or CHANNEL_ID == 11 then
                    --暂时屏蔽
                    if  Common:isToday(cc.UserDefault:getInstance():getIntegerForKey(Default.UserDefault_TuHaoActivity,0)) == false then

@@ -55,7 +55,7 @@ function LoadingLayer:onCreate()
     self:addChild(csb)
     self.root = csb:getChildByName("Panel_root")
     
-    local bgFileName = string.format("achannel/%d/loginbg.jpg",CHANNEL_ID)
+    local bgFileName = string.format("achannel/%d/loginbg.png",CHANNEL_ID)
     if cc.FileUtils:getInstance():isFileExist(bgFileName) then
         self.root:setBackGroundImage(bgFileName)
     end

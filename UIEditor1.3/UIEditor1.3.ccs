@@ -7076,9 +7076,11 @@
             <Image Name="zipai_table_wufu.png" />
           </Folder>
         </Folder>
+        <Project Name="AgreementLayer.csd" Type="Layer" />
         <Project Name="ChatLayer.csd" Type="Layer" />
         <Project Name="ClubTableLayer.csd" Type="Layer" />
         <Project Name="DissolutionLayer.csd" Type="Layer" />
+        <Project Name="EffectsLayer.csd" Type="Layer" />
         <Project Name="FriendsRoomEndLayer.csd" Type="Layer" />
         <Project Name="GameLayerMaJiang.csd" Type="Layer" />
         <Project Name="GameLayerMaJiang_End.csd" Type="Layer" />
